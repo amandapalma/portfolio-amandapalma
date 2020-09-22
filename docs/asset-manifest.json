@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.0303aa58.chunk.css",
+    "main.js": "./static/js/main.5b1022d9.chunk.js",
+    "main.js.map": "./static/js/main.5b1022d9.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.802bfb44.js",
+    "runtime-main.js.map": "./static/js/runtime-main.802bfb44.js.map",
+    "static/js/2.c83bbeea.chunk.js": "./static/js/2.c83bbeea.chunk.js",
+    "static/js/2.c83bbeea.chunk.js.map": "./static/js/2.c83bbeea.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.3ec55c7647bd3ce08ab9b6c8065bde14.js": "./precache-manifest.3ec55c7647bd3ce08ab9b6c8065bde14.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.0303aa58.chunk.css.map": "./static/css/main.0303aa58.chunk.css.map",
+    "static/js/2.c83bbeea.chunk.js.LICENSE.txt": "./static/js/2.c83bbeea.chunk.js.LICENSE.txt",
+    "static/media/palmtrees3.mp4": "./static/media/palmtrees3.63ad88b5.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.802bfb44.js",
+    "static/js/2.c83bbeea.chunk.js",
+    "static/css/main.0303aa58.chunk.css",
+    "static/js/main.5b1022d9.chunk.js"
+  ]
+}
