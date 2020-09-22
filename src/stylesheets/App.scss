@@ -18,32 +18,19 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: auto;
   object-fit: cover;
   z-index: -1;
 }
 
 .title {
   font-family: $font-secondary;
-  font-size: 70px;
+  font-size: 30px;
   font-weight: 800;
   text-transform: uppercase;
   color: $color-secondary;
   animation: tracking-in-contract 3s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 
-  @-webkit-keyframes tracking-in-contract {
-    0% {
-      letter-spacing: 1em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      letter-spacing: normal;
-      opacity: 1;
-    }
-  }
   @keyframes tracking-in-contract {
     0% {
       letter-spacing: 1em;
@@ -57,34 +44,100 @@
       opacity: 1;
     }
   }
+
+  @include tablet {
+    font-size: 70px;
+  }
+}
+
+.line {
+  width: 200px;
+  height: 1px;
+  margin-top: 20px;
+  background-color: $color-dark;
+  animation: line-width 2s;
+
+  @keyframes line-width {
+    0% {
+      width: 0px;
+    }
+    50% {
+      width: 0px;
+    }
+    100% {
+      width: 200px;
+    }
+  }
+
+  @include tablet {
+    width: 450px;
+
+    @keyframes line-width {
+      0% {
+        width: 0px;
+      }
+      50% {
+        width: 0px;
+      }
+      100% {
+        width: 450px;
+      }
+    }
+  }
 }
 
 .SSMM {
   display: flex;
   justify-content: space-evenly;
   font-family: $font-primary;
-  font-size: 30px;
-  width: 20%;
-  margin-top: 30px;
-  border-top: 1px solid $color-dark;
-  padding-top: 30px;
-  // animation: border-line 2s linear 4s infinite alternate;
+  font-size: 20px;
+  width: 40%;
+  margin-top: 20px;
+  opacity: 100%;
+  animation: bounce-in-fwd 1.1s both;
 
-  // @keyframes border-line {
-  //   0% {
-  //     border-bottom: 0px;
-  //   }
+  @keyframes bounce-in-fwd {
+    0% {
+      transform: scale(0);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: scale(0.7);
+      animation-timing-function: ease-in;
+    }
 
-  //   100% {
-  //     border-bottom: 1px;
-  //   }
-  // }
+    81% {
+      transform: scale(1);
+      animation-timing-function: ease-in;
+    }
+
+    95% {
+      transform: scale(0.95);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
+  @include tablet {
+    margin-top: 30px;
+    font-size: 30px;
+    width: 20%;
+  }
 }
 
-li {
+.link {
   color: $color-primary;
+  transition: color ease-in-out 0.8s;
+
   &:hover {
-    transition: color ease 1.5s;
     color: $color-dark;
   }
 }

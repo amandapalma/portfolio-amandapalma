@@ -1,5 +1,5 @@
 import React from "react";
-// import logo from './logo.svg';
+import poster from "../video/poster.png";
 // import ItemList from "./ItemList";
 // import dataFromApi from "../data/data";
 import Video from "../video/palmtrees3.mp4";
@@ -9,19 +9,12 @@ function App() {
   return (
     <div className="App">
       <h1 className="title">Coming soon</h1>
-      <div className="vidContainer">
-        <video
-          autoPlay
-          loop
-          muted
-          poster="/src/video/poster.png"
-          className="videoBG"
-        >
-          <source src={Video} type="video/mp4"></source>
-        </video>
-      </div>
+      <video autoPlay loop muted poster={poster} className="videoBG">
+        <source src={Video} type="video/mp4"></source>
+      </video>
+      <div className="line"></div>
       <ul className="SSMM">
-        <li>
+        <li className="link">
           <a
             href="https://github.com/amandapalma"
             alt="GitHub"
@@ -31,7 +24,7 @@ function App() {
             <i class="fab fa-github"></i>
           </a>
         </li>
-        <li>
+        <li className="link">
           <a
             href="https://www.linkedin.com/in/amanda~palma/"
             alt="linkedIn"
@@ -41,7 +34,7 @@ function App() {
             <i className="fab fa-linkedin-in"></i>
           </a>
         </li>
-        <li>
+        <li className="link">
           <a
             href="https://twitter.com/amandapalmaav"
             alt="twitter"
@@ -51,7 +44,7 @@ function App() {
             <i class="fab fa-twitter"></i>
           </a>
         </li>
-        <li>
+        <li className="link">
           <a
             href="mailto:amandapalma00@gmail.com"
             alt="email"
