@@ -7,8 +7,11 @@ function App() {
     <div className="App">
       {/* <Comingsoon></Comingsoon> */}
       <section className="home">
-        <div className="homeBackground"></div>
-        <header className="header">
+        <div className="home__homeBackground"></div>
+        <header className="home__header">
+          <div className="closeIcon">
+            <i className="fas fa-times"></i>
+          </div>
           <nav className="header__menu">
             <ul className="nav">
               <li className="nav__option">projects</li>
@@ -32,11 +35,14 @@ function App() {
             </ul>
           </nav>
         </header>
-        <h1 className="home__title">hola</h1>
-        <div className="home__titleIcon">
-          <span role="img" aria-labelledby="palmtree icon">
-            🌴
-          </span>
+        <div className="home__titlebox">
+          <h1 className="home__title">
+            <span className="home__title1">ho</span>
+            <span className="home__title2">
+              la
+              <div className="palmtree"></div>
+            </span>
+          </h1>
         </div>
       </section>
       <section className="projects">
