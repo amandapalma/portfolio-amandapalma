@@ -5,21 +5,66 @@
 //HOME
 
 .App {
-  margin: 270px;
-  //   border: 1px solid greenyellow;
+  // 
+    border: 1px solid greenyellow;
+    min-height: 100vh;
 }
+
 .home {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
 
-  &__header {
-    position: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted orange;
+
+  &__homeBackground {
+    background-color: $color-primary;
+    width: 50%;
+    height: 90vh;
+    position: absolute;
     top: 0;
-    right: 0;
-    margin: 30px;
+    left: 0;
+    z-index: -1;
+    margin: 5vh;
 
-    .nav {
+  }
+
+  &__titlebox {
+    // border: solid 1px pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin:auto;
+    border: 1px solid violet;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // border: 1px dashed rebeccapurple;
+  }
+
+  &__title2 {
+    display: flex;
+    // border: 1px dotted rebeccapurple;
+  }
+}
+
+.fixheader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 30px;
+
+  &__closeIcon {
+    color: $color-secondary;
+    font-size: 40px;
+  }
+}
+
+.nav {
       margin-bottom: 20px;
 
       &__option {
@@ -31,7 +76,7 @@
       }
     }
 
-    .ssmm {
+.ssmm {
       height: 80px;
       display: flex;
       flex-direction: column;
@@ -44,51 +89,14 @@
         }
       }
     }
-  }
+  
 
-  .closeIcon {
-    color: $color-secondary;
-    font-size: 40px;
-    // text-align: right;
-  }
-  &__homeBackground {
-    background-color: $color-primary;
-    width: 50%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    margin: 45px;
-  }
-
-  &__titlebox {
-    // border: solid 1px pink;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15%;
-  }
-
-  &__title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    // border: 2px dashed green;
-  }
-
-  //   &__title1 {
-  //   }
-
-  &__title2 {
-    display: flex;
-  }
-}
 
 .palmtree {
-  background-image: url(../images/palmtreeicon.png);
-  width: 67px;
-  height: 65px;
+  width: 63px;
+  height: 63px;
   object-fit: cover;
-  transform: translate(-18px, 71.5px);
+
+  border: solid 1px red;
+
 }

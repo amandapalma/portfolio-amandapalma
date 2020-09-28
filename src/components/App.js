@@ -1,5 +1,6 @@
 import React from "react";
 // import Comingsoon from "./Comingsoon";
+import palmtree from "../images/palmtreeicon.png"
 import "../stylesheets/App.scss";
 
 function App() {
@@ -8,11 +9,11 @@ function App() {
       {/* <Comingsoon></Comingsoon> */}
       <section className="home">
         <div className="home__homeBackground"></div>
-        <header className="home__header">
-          <div className="closeIcon">
+        <header className="fixheader">
+          <div className="fixheader__closeIcon">
             <i className="fas fa-times"></i>
           </div>
-          <nav className="header__menu">
+          <nav className="fixheader__menu">
             <ul className="nav">
               <li className="nav__option">projects</li>
               <li className="nav__option">about</li>
@@ -40,18 +41,14 @@ function App() {
             <span className="home__title1">ho</span>
             <span className="home__title2">
               la
-              <div className="palmtree"></div>
+              <div palmtreeBox><img className="palmtree" alt="palmtree" src={palmtree}></img></div>
             </span>
           </h1>
         </div>
       </section>
       <section className="projects">
         <h2 className="projects__sectionTitle">projects</h2>
-        <div className="projects__titleIcon">
-          <span role="img" aria-labelledby="palmtree icon">
-            🌴
-          </span>
-        </div>
+        <div palmtreeBox><img className="palmtree" alt="palmtree" src={palmtree}></img></div>
         <ul>
           <li className="project">
             <div className="project__cover"></div>
@@ -74,11 +71,7 @@ function App() {
       <section className="about">
         <div className="aboutBackround"></div>
         <h2 className="about__sectionTitle">about</h2>
-        <div className="about__titleIcon">
-          <span role="img" aria-labelledby="palmtree icon">
-            🌴
-          </span>
-        </div>
+        <div palmtreeBox><img className="palmtree" alt="palmtree" src={palmtree}></img></div>
         <p>
           Aliquip nulla eiusmod velit incididunt commodo cillum aliqua ullamco
           officia ex consequat anim. Anim sit anim eu proident anim labore dolor
@@ -102,10 +95,9 @@ function App() {
       </section>
       <section className="contact">
         <h2 className="contact__sectionTitle">contact</h2>
+        <div palmtreeBox><img className="palmtree" alt="palmtree" src={palmtree}></img></div>
         <div className="stampframe1">
-          <div className="stampframe2">
-            <img alt="palmtreeIcon"></img>
-          </div>
+        <div palmtreeBox><img className="palmtree" alt="palmtree" src={palmtree}></img></div>
         </div>
         <div className="contact__titleIcon">
           <span role="img" aria-labelledby="palmtree icon">
