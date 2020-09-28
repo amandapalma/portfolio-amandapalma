@@ -2,57 +2,12 @@
 @import "../stylesheets/mixins.scss";
 @import "../stylesheets/variables.scss";
 
-//HOME
 
-.App {
-  // 
-    border: 1px solid greenyellow;
-    min-height: 100vh;
-}
 
-.home {
 
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px dotted orange;
+//HEADER
 
-  &__homeBackground {
-    background-color: $color-primary;
-    width: 50%;
-    height: 90vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    margin: 5vh;
-
-  }
-
-  &__titlebox {
-    // border: solid 1px pink;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // margin:auto;
-    border: 1px solid violet;
-  }
-
-  &__title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    // border: 1px dashed rebeccapurple;
-  }
-
-  &__title2 {
-    display: flex;
-    // border: 1px dotted rebeccapurple;
-  }
-}
-
-.fixheader {
+.fixHeader {
   position: fixed;
   top: 0;
   right: 0;
@@ -65,38 +20,107 @@
 }
 
 .nav {
-      margin-bottom: 20px;
+  margin-bottom: 20px;
 
-      &__option {
-        margin-top: 15px;
-        &:hover {
-          color: $color-secondary;
-          cursor: pointer;
-        }
-      }
+  &__option {
+    margin-top: 15px;
+    &:hover {
+      color: $color-secondary;
+      cursor: pointer;
     }
+  }
+}
 
 .ssmm {
-      height: 80px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-      &__icon {
-        &:hover {
-          color: $color-primary;
-          cursor: pointer;
-        }
-      }
+  &__icon {
+    &:hover {
+      color: $color-primary;
+      cursor: pointer;
     }
-  
+  }
+}
 
+
+//MAIN
+.main{
+  margin: 5vh;
+  // border: 4px dotted deeppink;
+}
+
+//HOME
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__homeBackground {
+    background-color: $color-primary;
+    width: 50%;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin: 5vh;
+    
+  }
+
+  &__mainTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+
+
+// SECTION
+
+.titleBox {
+  display: flex;
+  margin-left: 350px;
+}
 
 .palmtree {
   width: 63px;
   height: 63px;
   object-fit: cover;
 
-  border: solid 1px red;
-
+  // border: solid 1px red;
 }
+
+.sectionPalmtree {
+  transform: translateY(62px);
+}
+
+//PROJECTS
+
+.workslist {
+  background-color: darkkhaki;
+
+  display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+
+  flex-grow: 4;
+  
+  grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+}
+
+.project {
+  width: 500px;
+  background-color: lightcyan;
+}
+
+//ABOUT
+
+//CONTACT
+
+//FOOTER
