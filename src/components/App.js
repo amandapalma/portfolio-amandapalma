@@ -13,10 +13,26 @@ function App() {
         </div>
         <nav className="fixHeader__menu">
           <ul className="nav">
-            <li className="nav__option"><a href="#projects" alt="go to projects">projects</a></li>
-            <li className="nav__option"><a href="#about" alt="go to projects">about</a></li>
-            <li className="nav__option"><a href="#contact" alt="go to projects">contact</a></li>
-            <li className="nav__option"><a href="#resume" alt="go to projects">resume</a></li>
+            <li className="nav__option">
+              <a href="#projects" alt="go to projects">
+                projects
+              </a>
+            </li>
+            <li className="nav__option">
+              <a href="#about" alt="go to projects">
+                about
+              </a>
+            </li>
+            <li className="nav__option">
+              <a href="#contact" alt="go to projects">
+                contact
+              </a>
+            </li>
+            <li className="nav__option">
+              <a href="#resume" alt="go to projects">
+                resume
+              </a>
+            </li>
           </ul>
           <ul className="ssmm">
             <li className="ssmm__icon">
@@ -55,10 +71,14 @@ function App() {
           </div>
           <ul className="workslist">
             <li className="project">
-            <div className="project__cover">
+              <div className="project__cover">
                 <div className="project__buttons">
-                  <button className="projectButton codeButton"><i class="fas fa-code"></i></button>
-                  <button className="projectButton webButton"><i class="fas fa-globe"></i></button>
+                  <button className="projectButton codeButton">
+                    <i class="fas fa-code"></i>
+                  </button>
+                  <button className="projectButton webButton">
+                    <i class="fas fa-globe"></i>
+                  </button>
                 </div>
                 <div className="project__description">
                   <h4 className="proyectType">corporative website</h4>
@@ -77,7 +97,6 @@ function App() {
                 alt="project"
                 src="https://via.placeholder.com/400"
               ></img>
-              
             </li>
             {/* TO DELETE */}
             <li className="project">
@@ -186,25 +205,31 @@ function App() {
         </section>
         <section className="contact">
           <div className="titleBox">
-          <h2 id="contact">contact</h2>
+            <h2 id="contact">contact</h2>
             <img
               className="palmtree sectionPalmtree"
               alt="palmtree"
               src={palmtree}
             ></img>
           </div>
-          <div className="stampframe1">
-            <div className="palmtreeStampBox">
-              <img className="palmtree" alt="palmtree" src={palmtree}></img>
+
+          <form className="postcard">
+            <div className="leftColumn">
+              <label htmlFor="GET-text">Dear Amanda:</label>
+              <textarea name="textarea" rows="10" cols="50"></textarea>
             </div>
-          </div>
-          <form>
-            <label htmlFor="GET-name">Name</label>
-            <input id="GET-name" type="text" name="name"></input>
-            <label htmlFor="GET-email">Email</label>
-            <input id="GET-email" type="email" name="email"></input>
-            <textarea name="textarea" rows="10" cols="50"></textarea>
-            <input type="submit" value="submit"></input>
+            <div className="rightColumn">
+              <div className="stamp">
+                <div className="stamp2">
+                  <img className="palmtree" alt="palmtree" src={palmtree}></img>
+                </div>
+              </div>
+              <label htmlFor="GET-name">Name</label>
+              <input id="GET-name" type="text" name="name"></input>
+              <label htmlFor="GET-email">Email</label>
+              <input id="GET-email" type="email" name="email"></input>
+              <input type="submit" value="fly!"></input>
+            </div>
           </form>
           <span className="upArrow">
             <i className="fas fa-long-arrow-alt-up"></i>up >>
