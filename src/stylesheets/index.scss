@@ -1,3 +1,7 @@
+@import "../stylesheets/reset.scss";
+@import "../stylesheets/mixins.scss";
+@import "../stylesheets/variables.scss";
+
 // * {
 //   padding: 0;
 //   margin: 0;
@@ -25,17 +29,47 @@ h4 {
 }
 
 h1 {
-  font-size: 200px;
-  line-height: 180px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-h2{
-  font-size: 136px;
+  font-size: 100px;
+  line-height: 80px;
   font-weight: 900;
   text-transform: uppercase;
 
+  @include tablet {
+    font-size: 200px;
+    line-height: 180px;
+  }
 }
+
+h2 {
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+
+  @include tablet {
+    font-size: 136px;
+    
+  }
+}
+
+
+  h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    
+
+  }
+
+    h4 {
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      text-transform: capitalize;
+      color:$color-light;
+      margin-bottom: 10px;
+      opacity:55%;
+    }
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;

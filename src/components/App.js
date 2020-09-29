@@ -39,7 +39,9 @@ function App() {
           <div className="home__homeBackground"></div>
           <h1 className="home__mainTitle">
             <span>ho</span>
-            <span>la<img className="palmtree" alt="palmtree" src={palmtree}></img></span>
+            <span>
+              la<img className="palmtree" alt="palmtree" src={palmtree}></img>
+            </span>
           </h1>
         </section>
         <section className="projects">
@@ -51,24 +53,40 @@ function App() {
               src={palmtree}
             ></img>
           </div>
-          <ul className = "workslist">
+          <ul className="workslist">
             <li className="project">
-              <div className="project__cover"></div>
-              <div className="project__image"></div>
-              <div className="project__buttons">
-                <button className="codeButton"></button>
-                <button className="webButton"></button>
+            <div className="project__cover">
+                <div className="project__buttons">
+                  <button className="projectButton codeButton"><i class="fas fa-code"></i></button>
+                  <button className="projectButton webButton"><i class="fas fa-globe"></i></button>
+                </div>
+                <div className="project__description">
+                  <h4 className="proyectType">corporative website</h4>
+                  <h3 className="proyectName"> A-Team project</h3>
+                  <div className="techIcons">
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-sass"></i>
+                  </div>
+                </div>
               </div>
-              <div className="project__description">
-                <h4 className="proyectType">corporative website</h4>
-                <h3 className="proyectName"> A-Team</h3>
-                <div className="techIcons"></div>
-              </div>
+              <img
+                className="project__image"
+                alt="project"
+                src="https://via.placeholder.com/400"
+              ></img>
+              
             </li>
             {/* TO DELETE */}
             <li className="project">
               <div className="project__cover"></div>
-              <div className="project__image"></div>
+              <img
+                className="project__image"
+                alt="project"
+                src="https://via.placeholder.com/400"
+              ></img>
               <div className="project__buttons">
                 <button className="codeButton"></button>
                 <button className="webButton"></button>
@@ -81,7 +99,11 @@ function App() {
             </li>
             <li className="project">
               <div className="project__cover"></div>
-              <div className="project__image"></div>
+              <img
+                className="project__image"
+                alt="project"
+                src="https://via.placeholder.com/400"
+              ></img>
               <div className="project__buttons">
                 <button className="codeButton"></button>
                 <button className="webButton"></button>
@@ -94,7 +116,11 @@ function App() {
             </li>
             <li className="project">
               <div className="project__cover"></div>
-              <div className="project__image"></div>
+              <img
+                className="project__image"
+                alt="project"
+                src="https://via.placeholder.com/400"
+              ></img>
               <div className="project__buttons">
                 <button className="codeButton"></button>
                 <button className="webButton"></button>
@@ -107,20 +133,11 @@ function App() {
             </li>
             <li className="project">
               <div className="project__cover"></div>
-              <div className="project__image"></div>
-              <div className="project__buttons">
-                <button className="codeButton"></button>
-                <button className="webButton"></button>
-              </div>
-              <div className="project__description">
-                <h4 className="proyectType">corporative website</h4>
-                <h3 className="proyectName"> A-Team</h3>
-                <div className="techIcons"></div>
-              </div>
-            </li>
-            <li className="project">
-              <div className="project__cover"></div>
-              <div className="project__image"></div>
+              <img
+                className="project__image"
+                alt="project"
+                src="https://via.placeholder.com/400"
+              ></img>
               <div className="project__buttons">
                 <button className="codeButton"></button>
                 <button className="webButton"></button>
@@ -195,20 +212,20 @@ function App() {
         </section>
       </main>
       <footer>
-      <ul className="ssmm">
-            <li className="ssmm__icon">
-              <i className="fab fa-github"></i>
-            </li>
-            <li className="ssmm__icon">
-              <i className="fab fa-linkedin-in"></i>
-            </li>
-            <li className="ssmm__icon">
-              <i className="fas fa-mobile-alt"></i>
-            </li>
-            <li className="ssmm__icon">
-              <i className="fas fa-envelope"></i>
-            </li>
-          </ul>
+        <ul className="ssmm">
+          <li className="ssmm__icon">
+            <i className="fab fa-github"></i>
+          </li>
+          <li className="ssmm__icon">
+            <i className="fab fa-linkedin-in"></i>
+          </li>
+          <li className="ssmm__icon">
+            <i className="fas fa-mobile-alt"></i>
+          </li>
+          <li className="ssmm__icon">
+            <i className="fas fa-envelope"></i>
+          </li>
+        </ul>
       </footer>
     </div>
   );
