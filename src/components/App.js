@@ -13,10 +13,10 @@ function App() {
         </div>
         <nav className="fixHeader__menu">
           <ul className="nav">
-            <li className="nav__option">projects</li>
-            <li className="nav__option">about</li>
-            <li className="nav__option">contact</li>
-            <li className="nav__option">resume</li>
+            <li className="nav__option"><a href="#projects" alt="go to projects">projects</a></li>
+            <li className="nav__option"><a href="#about" alt="go to projects">about</a></li>
+            <li className="nav__option"><a href="#contact" alt="go to projects">contact</a></li>
+            <li className="nav__option"><a href="#resume" alt="go to projects">resume</a></li>
           </ul>
           <ul className="ssmm">
             <li className="ssmm__icon">
@@ -46,7 +46,7 @@ function App() {
         </section>
         <section className="projects">
           <div className="titleBox">
-            <h2>projects</h2>
+            <h2 id="projects">projects</h2>
             <img
               className="palmtree sectionPalmtree"
               alt="palmtree"
@@ -157,7 +157,7 @@ function App() {
         <section className="about">
           <div className="about__aboutBackround"></div>
           <div className="titleBox">
-            <h2>about</h2>
+            <h2 id="about">about</h2>
             <img
               className="palmtree sectionPalmtree"
               alt="palmtree"
@@ -186,7 +186,7 @@ function App() {
         </section>
         <section className="contact">
           <div className="titleBox">
-            <h2>contact</h2>
+          <h2 id="contact">contact</h2>
             <img
               className="palmtree sectionPalmtree"
               alt="palmtree"
