@@ -1,6 +1,8 @@
 import React from "react";
 // import Comingsoon from "./Comingsoon";
 import palmtree from "../images/palmtreeicon.png";
+import uparrow from "../images/up-arrow.svg";
+
 import "../stylesheets/App.scss";
 
 function App() {
@@ -51,7 +53,7 @@ function App() {
         </nav>
       </header>
       <main className="main">
-        <section className="home">
+        <section id="home" className="home">
           <div className="home__homeBackground"></div>
           <h1 className="home__mainTitle">
             <span>ho</span>
@@ -169,9 +171,16 @@ function App() {
             </li>
             {/* TO DELETE */}
           </ul>
-          <span className="upArrow">
-            <i className="fas fa-long-arrow-alt-up"></i>up >>
-          </span>
+          <div className="arrowBox">
+            <a href="#home" className="upArrow">
+              <img
+                className="upArrow__arrow"
+                alt="up arrow"
+                src={uparrow}
+              ></img>
+              <p className="upArrow__upText">up</p>
+            </a>
+          </div>
         </section>
         <section className="about">
           <div className="about__aboutBackround"></div>
@@ -199,9 +208,16 @@ function App() {
           <div className="about__profileImg">
             <img alt="profile"></img>
           </div>
-          <span className="upArrow">
-            <i className="fas fa-long-arrow-alt-up"></i>up >>
-          </span>
+          <div className="arrowBox">
+            <a href="#home" className="upArrow">
+              <img
+                className="upArrow__arrow"
+                alt="up arrow"
+                src={uparrow}
+              ></img>
+              <p className="upArrow__upText">up</p>
+            </a>
+          </div>
         </section>
         <section className="contact">
           <div className="titleBox">
@@ -215,8 +231,14 @@ function App() {
 
           <form className="postcard">
             <div className="leftColumn">
-              <label htmlFor="GET-text">Dear Amanda:</label>
-              <textarea name="textarea" rows="10" cols="50"></textarea>
+              <label className="label textLabel" htmlFor="GET-text">
+                Dear Amanda: *
+              </label>
+              <textarea
+                className="formInput textarea"
+                name="textarea"
+                rows="10"
+              ></textarea>
             </div>
             <div className="rightColumn">
               <div className="stamp">
@@ -224,33 +246,81 @@ function App() {
                   <img className="palmtree" alt="palmtree" src={palmtree}></img>
                 </div>
               </div>
-              <label htmlFor="GET-name">Name</label>
-              <input id="GET-name" type="text" name="name"></input>
-              <label htmlFor="GET-email">Email</label>
-              <input id="GET-email" type="email" name="email"></input>
-              <input type="submit" value="fly!"></input>
+              <label className="label nameLabel" htmlFor="GET-name">
+                Name *
+              </label>
+              <input
+                className="formInput nameInput"
+                id="GET-name"
+                type="text"
+                name="name"
+              ></input>
+              <label className="label emailLabel" htmlFor="GET-email">
+                Email *
+              </label>
+              <input
+                className="formInput emailInput"
+                id="GET-email"
+                type="email"
+                name="email"
+              ></input>
+              <button type="submit" className="submitInput">
+                send it! &nbsp;&nbsp;<i class="fas fa-paper-plane"></i>
+              </button>
             </div>
           </form>
-          <span className="upArrow">
-            <i className="fas fa-long-arrow-alt-up"></i>up >>
-          </span>
+          <div className="arrowBox">
+            <a href="#home" className="upArrow">
+              <img
+                className="upArrow__arrow"
+                alt="up arrow"
+                src={uparrow}
+              ></img>
+              <p className="upArrow__upText">up</p>
+            </a>
+          </div>
         </section>
       </main>
       <footer>
-        <ul className="ssmm">
+        <ul className="footerssmm">
           <li className="ssmm__icon">
-            <i className="fab fa-github"></i>
+            <a
+              ClassName="footerGH"
+              href="https://github.com/amandapalma"
+              alt="github"
+            >
+              <i className="fab fa-github"></i>
+            </a>
           </li>
           <li className="ssmm__icon">
-            <i className="fab fa-linkedin-in"></i>
+            <a
+              ClassName="footerLin"
+              href="https://www.linkedin.com/in/amanda~palma/"
+              alt="linkedin"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </a>
           </li>
           <li className="ssmm__icon">
-            <i className="fas fa-mobile-alt"></i>
+            <a
+              ClassName="footerTel"
+              href="callto:0034687508122"
+              alt="telephone"
+            >
+              <i className="fas fa-mobile-alt"></i>
+            </a>
           </li>
           <li className="ssmm__icon">
-            <i className="fas fa-envelope"></i>
+            <a
+              ClassName="footerMail"
+              href="mailto:amandapalma00@gmail.com"
+              alt="email"
+            >
+              <i className="fas fa-envelope"></i>
+            </a>
           </li>
         </ul>
+        <div className="copy"><small>amandapalma ©</small></div>
       </footer>
     </div>
   );

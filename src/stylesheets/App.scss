@@ -77,7 +77,6 @@
 // SECTION
 
 .titleBox {
-
   display: flex;
   margin-left: 0px;
   margin-bottom: 80px;
@@ -92,12 +91,38 @@
   width: 63px;
   height: 63px;
   object-fit: cover;
-
-  // border: solid 1px red;
 }
 
 .sectionPalmtree {
   transform: translateY(62px);
+}
+
+//ARROW
+.arrowBox {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+  
+}
+.upArrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+
+  transition: all 0.5s;
+  &:hover :first-child {
+    transform: translateY(-20px);
+  }
+
+  &__arrow {
+    height: 30px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+  }
+  &__upText {
+    transform: rotate(-90deg);
+  }
 }
 
 //PROJECTS
@@ -185,7 +210,6 @@
     width: 100px;
     display: flex;
     justify-content: space-between;
-    
   }
 }
 
@@ -193,87 +217,137 @@
 
 //CONTACT
 
-//zigzag
-
-// .palmtreeStampBox {
-//     position: relative;
-//     // padding: 8px 8px 32px 8px;
-//     background: $color-secondary;
-//     height:15px;
 
 
-// &:after {
-//   background: linear-gradient(-45deg, #ffffff 10px, transparent 0), linear-gradient(45deg, #ffffff 10px, transparent 0);
-//   background-position: left-bottom;
-//   background-repeat: repeat-x;
-//   background-size: 32px 32px;
-//   content: " ";
-//   display: block;
-//   position: absolute;
-//   bottom: 0px;
-//   left: 0px;
-//   width: 100%;
-//   height: 32px;
-// }
-// }
-
-
-
-
-
-.stamp{
-  border: 1px solid black;
-  margin:40px;
-  width: 100px;
-  align-self: flex-end;
-
-}
-.stamp2{
-  border: 1px solid black;
-  margin:10px;
-  padding:10px;
+.contact{
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-.postcard{
+.postcard {
+  align-self: center;
   display: flex;
   flex-direction: row;
-  // background-color: lightskyblue;
+  align-content: center;
+  width: 60%;
   
   
 }
 
-.leftColumn{
-flex:50%;
-border-right: 1px solid black;
-// background-color: lightgray;
-display: flex;
-flex-direction: column;
-padding: 40px;
+.leftColumn {
+  flex: 50%;
+  border-right: 1px solid black;
+  // background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
 }
 
-.rightColumn{
-  flex:50%;
+.rightColumn {
+  flex: 50%;
 
-
-display: flex;
-flex-direction: column;
-padding: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
 }
 
-input, textarea{
+.stamp {
+  border: 1px solid black;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+.stamp2 {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.formInput {
   border: none;
-  border-bottom:1px solid black;
-  padding:10px;
-  
+  border-bottom: 1px solid $color-dark;
+  padding: 10px;
+  font-family: "Caveat", cursive;
+  font-size: 25px;
+  margin-bottom: 40px;
+  &:focus {
+    outline: none;
+    border-bottom: 0.5px dotted $color-primary;
+  }
 }
 
-label{
-  margin: 20px 0 20px 0;
+.textarea {
+  border: 1px dotted $color-dark;
+  margin-top: 40px;
+  &:focus {
+    border: 0.5px dotted $color-primary;
+  }
 }
 
+.submitInput {
+  width: 25%;
+  height: 50px;
+  align-self: flex-end;
+  display: inline;
+  color: $color-light;
+  background-color: $color-primary;
 
+  border: none;
+  // margin-top: 20px;
+  transition: all 0.3s ease-out;
 
+  &:hover {
+    background-color: $color-dark;
+    color: $color-light;
+  }
+}
+
+.label {
+  font-weight: 900;
+}
 
 //FOOTER
+
+
+//zigzag
+
+// .prefooter {
+//   position: relative;
+//   padding: 8px 8px 32px 8px;
+//   background: $color-secondary;
+//   height:15px;
+//   z-index: 1;
+
+// &:after {
+// background: linear-gradient(-45deg, #ffffff 10px, transparent 0), linear-gradient(45deg, #ffffff 10px, transparent 0);
+// background-position: left-bottom;
+// background-repeat: repeat-x;
+// background-size: 32px 32px;
+// content: " ";
+// display: block;
+// position: absolute;
+// bottom: 0px;
+// left: 0px;
+// width: 100%;
+// height: 32px;
+// }
+// }
+
+footer{
+  background-color: $color-primary;
+  height: 100px;
+ 
+}
+.footerssmm{
+display: flex;
+justify-content: space-between;
+width: 80px;
+
+border: solid 1px red;
+
+}
