@@ -2,6 +2,7 @@ import React from "react";
 // import Comingsoon from "./Comingsoon";
 import palmtree from "../images/palmtreeicon.png";
 import uparrow from "../images/up-arrow.svg";
+import profilepic from "../images/amanda-bn.png";
 
 import "../stylesheets/App.scss";
 
@@ -184,6 +185,7 @@ function App() {
         </section>
         <section className="about">
           <div className="about__aboutBackround"></div>
+
           <div className="titleBox">
             <h2 id="about">about</h2>
             <img
@@ -192,22 +194,27 @@ function App() {
               src={palmtree}
             ></img>
           </div>
-          <p className="about__description">
-            Aliquip nulla eiusmod velit incididunt commodo cillum aliqua ullamco
-            officia ex consequat anim. Anim sit anim eu proident anim labore
-            dolor ea reprehenderit voluptate. <br></br>Tempor minim laboris
-            veniam mollit sint consectetur. Dolor duis amet sunt ut laboris
-            velit labore dolore aliqua velit aliquip voluptate eiusmod
-            voluptate. Voluptate eiusmod officia fugiat adipisicing enim
-            exercitation consectetur eu commodo nulla elit. Lorem excepteur in
-            tempor nisi esse cupidatat. <br></br>Non labore culpa eiusmod
-            ullamco ex voluptate labore deserunt ipsum irure nulla sunt commodo
-            ad. Tempor occaecat amet nostrud sit voluptate ut aute fugiat velit
-            eiusmod cillum laborum. Cillum commodo occaecat tempor quis culpa.
-          </p>
-          <div className="about__profileImg">
-            <img alt="profile"></img>
+
+          <div className="profile">
+            <p className="profile__description">
+              Programadora Front end. Vengo del diseño, la gestión cultural, del
+              audiovisual, y soy música. Creo en la cultura y en la tecnología
+              como motores para favorecer el entendimiento y la solución de
+              problemas entre las personas y su entorno, desde el respeto, la
+              empatía y el esfuerzo por mejorar. Y trato de aplicar esto a todo
+              lo que hago, no sólo a nivel profesional. Me interesan también las
+              áreas sociales y medioambientales. Se me da bien el diseño, la
+              comunicación y el trabajo en equipo, tengo experiencia trabajando
+              en remoto y creo que no podría vivir (bien) sin humor. Diría que
+              soy creativa, polivalente, me adapto y me encanta aprender. Y si
+              las cosas están bien organizadas y claras para todos, mejor.
+            </p>
+
+            <div className="profile__imageBox">
+              <img className="profileImg" src={profilepic} alt="profile"></img>
+            </div>
           </div>
+
           <div className="arrowBox">
             <a href="#home" className="upArrow">
               <img
@@ -282,6 +289,9 @@ function App() {
         </section>
       </main>
       <footer>
+        <span className="copy">
+          <h4>Find me:</h4>
+        </span>
         <ul className="footerssmm">
           <li className="ssmm__icon">
             <a
@@ -320,7 +330,15 @@ function App() {
             </a>
           </li>
         </ul>
-        <div className="copy"><small>amandapalma ©</small></div>
+        <span className="copy">
+          <small>amandapalma ©</small>
+        </span>
+        <span className="copy">
+          <small>(+34) 687 508 122</small>
+        </span>
+        <span className="copy">
+          <small>amandapalma00@gmail.com</small>
+        </span>
       </footer>
     </div>
   );
