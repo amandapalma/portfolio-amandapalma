@@ -9,6 +9,7 @@
   top: 0;
   right: 0;
   margin: 30px;
+  z-index: 1;
 
   &__closeIcon {
     color: $color-secondary;
@@ -21,10 +22,28 @@
 
   &__option {
     margin-top: 15px;
-    &:hover {
-      color: $color-secondary;
-      cursor: pointer;
-    }
+
+    position: relative;
+
+    &:before{
+
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 7px;
+        bottom: 0;
+        left: 0;
+        background-color: $color-secondary;
+        visibility: hidden;
+        transition: all 0.3s ease-in-out;
+        opacity: 0.3;
+        cursor:pointer;
+      }
+
+      &:hover:before {
+        visibility: visible;
+        width: 100%;
+      }
   }
 }
 
@@ -33,9 +52,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+ 
 
   &__icon {
     &:hover {
+      
       color: $color-primary;
       cursor: pointer;
     }
@@ -75,11 +96,17 @@
 
 // SECTION
 
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
 .titleBox {
   display: flex;
   margin-left: 0px;
   margin-bottom: 80px;
   margin-top: 80px;
+  // border: 1px dotted blue;
 
   @include desktop {
     margin-left: 350px;
@@ -96,17 +123,21 @@
   transform: translateY(62px);
 }
 
-//ARROW
+//arrow
+
 .arrowBox {
   display: flex;
   justify-content: center;
-  margin: 25px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+  top: -80px;
+  
 }
 .upArrow {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   transition: all 0.5s;
   &:hover :first-child {
     transform: translateY(-20px);
@@ -122,10 +153,14 @@
   }
 }
 
+.contactArrow {
+  top: 70px;
+}
+
 //PROJECTS
 
 .workslist {
-  background-color: darkkhaki;
+  border: 1px dashed black;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -133,8 +168,6 @@
 }
 
 .project {
-  // background-color: pink;
-  border: solid 1px black;
   margin: 0 auto;
   width: 100%;
 
@@ -145,7 +178,6 @@
     width: 100%;
     object-fit: contain;
     transition: all 0.5s;
-    // border: solid 4px green;
   }
 
   &__cover {
@@ -205,10 +237,6 @@
 //ABOUT
 
 .about {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-
   &__aboutBackround {
     width: 0;
     height: 0;
@@ -226,13 +254,11 @@
 .profile {
   display: flex;
   justify-content: space-between;
-  height:2000px; 
-  // border: 2px dotted blue;
-  margin-left:350px;
-  margin-right:300px;
+  height: 703px;
+  margin-left: 350px;
+  margin-right: 300px;
 
   &__description {
-    // border: 1px solid lightgrey;
     width: 50%;
     text-align: justify;
     align-self: flex-start;
@@ -250,11 +276,6 @@
 }
 
 //CONTACT
-
-.contact {
-  display: flex;
-  flex-direction: column;
-}
 
 .postcard {
   align-self: center;
@@ -282,7 +303,7 @@
 }
 
 .stamp {
-  border: 1px solid black;
+  border: 1px dashed black;
   width: 140px;
   display: flex;
   justify-content: center;
@@ -295,6 +316,12 @@
   width: 120px;
   display: flex;
   justify-content: center;
+}
+
+.palmtreeIsland {
+  width: 100%;
+  background-color: $color-secondary;
+  padding: 10px;
 }
 
 .formInput {
@@ -325,11 +352,8 @@
   display: inline;
   color: $color-light;
   background-color: $color-primary;
-
   border: none;
-
   transition: all 0.3s ease-out;
-
   &:hover {
     background-color: $color-dark;
     color: $color-light;
@@ -338,6 +362,11 @@
 
 .label {
   font-weight: 900;
+}
+
+.as {
+  border: 1px solid red;
+  color: $color-secondary;
 }
 
 //FOOTER
@@ -366,14 +395,25 @@
 // }
 // }
 
-footer {
+.footer {
   background-color: $color-primary;
-  height: 100px;
-}
-.footerssmm {
+  // height: 200px;
+  padding: 20px;
   display: flex;
-  justify-content: space-between;
-  width: 80px;
+  flex-direction: column;
+  align-items: flex-end;
+  color: $color-light;
 
-  border: solid 1px red;
+  &__ssmmfooter {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+
+    & .icon {
+      &:hover {
+        color: $color-dark;
+        cursor: pointer;
+      }
+    }
+  }
 }

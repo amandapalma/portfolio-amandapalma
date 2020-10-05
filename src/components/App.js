@@ -1,6 +1,7 @@
 import React from "react";
 // import Comingsoon from "./Comingsoon";
 import palmtree from "../images/palmtreeicon.png";
+import palmtreeIsland from "../images/palmtree-island.png";
 import uparrow from "../images/up-arrow.svg";
 import profilepic from "../images/amanda-bn.png";
 
@@ -63,7 +64,7 @@ function App() {
             </span>
           </h1>
         </section>
-        <section className="projects">
+        <section className="section projects">
           <div className="titleBox">
             <h2 id="projects">projects</h2>
             <img
@@ -103,72 +104,144 @@ function App() {
             </li>
             {/* TO DELETE */}
             <li className="project">
-              <div className="project__cover"></div>
+              <div className="project__cover">
+                <div className="project__buttons">
+                  <button className="projectButton codeButton">
+                    <i class="fas fa-code"></i>
+                  </button>
+                  <button className="projectButton webButton">
+                    <i class="fas fa-globe"></i>
+                  </button>
+                </div>
+                <div className="project__description">
+                  <h4 className="proyectType">corporative website</h4>
+                  <h3 className="proyectName"> A-Team project</h3>
+                  <div className="techIcons">
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-sass"></i>
+                  </div>
+                </div>
+              </div>
               <img
                 className="project__image"
                 alt="project"
                 src="https://via.placeholder.com/400"
               ></img>
-              <div className="project__buttons">
-                <button className="codeButton"></button>
-                <button className="webButton"></button>
-              </div>
-              <div className="project__description">
-                <h4 className="proyectType">corporative website</h4>
-                <h3 className="proyectName"> A-Team</h3>
-                <div className="techIcons"></div>
-              </div>
             </li>
             <li className="project">
-              <div className="project__cover"></div>
+              <div className="project__cover">
+                <div className="project__buttons">
+                  <button className="projectButton codeButton">
+                    <i class="fas fa-code"></i>
+                  </button>
+                  <button className="projectButton webButton">
+                    <i class="fas fa-globe"></i>
+                  </button>
+                </div>
+                <div className="project__description">
+                  <h4 className="proyectType">corporative website</h4>
+                  <h3 className="proyectName"> A-Team project</h3>
+                  <div className="techIcons">
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-sass"></i>
+                  </div>
+                </div>
+              </div>
               <img
                 className="project__image"
                 alt="project"
                 src="https://via.placeholder.com/400"
               ></img>
-              <div className="project__buttons">
-                <button className="codeButton"></button>
-                <button className="webButton"></button>
-              </div>
-              <div className="project__description">
-                <h4 className="proyectType">corporative website</h4>
-                <h3 className="proyectName"> A-Team</h3>
-                <div className="techIcons"></div>
-              </div>
             </li>
             <li className="project">
-              <div className="project__cover"></div>
+              <div className="project__cover">
+                <div className="project__buttons">
+                  <button className="projectButton codeButton">
+                    <i class="fas fa-code"></i>
+                  </button>
+                  <button className="projectButton webButton">
+                    <i class="fas fa-globe"></i>
+                  </button>
+                </div>
+                <div className="project__description">
+                  <h4 className="proyectType">corporative website</h4>
+                  <h3 className="proyectName"> A-Team project</h3>
+                  <div className="techIcons">
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-sass"></i>
+                  </div>
+                </div>
+              </div>
               <img
                 className="project__image"
                 alt="project"
                 src="https://via.placeholder.com/400"
               ></img>
-              <div className="project__buttons">
-                <button className="codeButton"></button>
-                <button className="webButton"></button>
-              </div>
-              <div className="project__description">
-                <h4 className="proyectType">corporative website</h4>
-                <h3 className="proyectName"> A-Team</h3>
-                <div className="techIcons"></div>
-              </div>
             </li>
             <li className="project">
-              <div className="project__cover"></div>
+              <div className="project__cover">
+                <div className="project__buttons">
+                  <button className="projectButton codeButton">
+                    <i class="fas fa-code"></i>
+                  </button>
+                  <button className="projectButton webButton">
+                    <i class="fas fa-globe"></i>
+                  </button>
+                </div>
+                <div className="project__description">
+                  <h4 className="proyectType">corporative website</h4>
+                  <h3 className="proyectName"> A-Team project</h3>
+                  <div className="techIcons">
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-sass"></i>
+                  </div>
+                </div>
+              </div>
               <img
                 className="project__image"
                 alt="project"
                 src="https://via.placeholder.com/400"
               ></img>
-              <div className="project__buttons">
-                <button className="codeButton"></button>
-                <button className="webButton"></button>
+            </li>
+            <li className="project">
+              <div className="project__cover">
+                <div className="project__buttons">
+                  <button className="projectButton codeButton">
+                    <i class="fas fa-code"></i>
+                  </button>
+                  <button className="projectButton webButton">
+                    <i class="fas fa-globe"></i>
+                  </button>
+                </div>
+                <div className="project__description">
+                  <h4 className="proyectType">corporative website</h4>
+                  <h3 className="proyectName"> A-Team project</h3>
+                  <div className="techIcons">
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-sass"></i>
+                  </div>
+                </div>
               </div>
-              <div className="project__description">
-                <h4 className="proyectType">corporative website</h4>
-                <h3 className="proyectName"> A-Team</h3>
-                <div className="techIcons"></div>
-              </div>
+              <img
+                className="project__image"
+                alt="project"
+                src="https://via.placeholder.com/400"
+              ></img>
             </li>
             {/* TO DELETE */}
           </ul>
@@ -183,9 +256,7 @@ function App() {
             </a>
           </div>
         </section>
-        <section className="about">
-          <div className="about__aboutBackround"></div>
-
+        <section className="section about">
           <div className="titleBox">
             <h2 id="about">about</h2>
             <img
@@ -194,27 +265,25 @@ function App() {
               src={palmtree}
             ></img>
           </div>
-
+          <div className="about__aboutBackround"></div>
           <div className="profile">
             <p className="profile__description">
-              Programadora Front end. Vengo del diseño, la gestión cultural, del
-              audiovisual, y soy música. Creo en la cultura y en la tecnología
-              como motores para favorecer el entendimiento y la solución de
-              problemas entre las personas y su entorno, desde el respeto, la
-              empatía y el esfuerzo por mejorar. Y trato de aplicar esto a todo
-              lo que hago, no sólo a nivel profesional. Me interesan también las
-              áreas sociales y medioambientales. Se me da bien el diseño, la
-              comunicación y el trabajo en equipo, tengo experiencia trabajando
-              en remoto y creo que no podría vivir (bien) sin humor. Diría que
-              soy creativa, polivalente, me adapto y me encanta aprender. Y si
-              las cosas están bien organizadas y claras para todos, mejor.
+        
+              Vengo del <strong>diseño</strong>, la <strong>gestión cultural</strong>, del sector 
+              <strong> audiovisual</strong>, y soy <strong>música</strong>. Ahora comienzo una nueva y emocionante etapa como <strong>desarrolladora front end. </strong>Cansada de la inestabilidad laboral y en busca de un entorno creativo que me permitiera crecer profesionalmente me topé con la programación y estoy muy contenta de haberlo hecho. <br></br><br></br>Creo en la cultura y en la tecnología
+              como motores para favorecer el entendimiento y la <strong>solución de
+              problemas</strong> entre las personas y su entorno, desde el respeto, la
+              empatía y el esfuerzo por mejorar. E intento aplicar esto a todo
+              lo que hago, no sólo profesionalmente. <br></br><br></br>
+              Me encantan las plantas, y todo ser viviente. Disfruto mucho aprendendiendo y creo que no podría vivir (bien) sin humor.
+              Actualmente hago música y busco activamente empleo como front. Sugerencias, colaboraciones, y por supuesto a ofertas laborales son bienvenidas.
+              <strong> Contacta conmigo</strong> si quieres que nos conozcamos. Será un placer. ;)
             </p>
 
             <div className="profile__imageBox">
               <img className="profileImg" src={profilepic} alt="profile"></img>
             </div>
           </div>
-
           <div className="arrowBox">
             <a href="#home" className="upArrow">
               <img
@@ -226,7 +295,7 @@ function App() {
             </a>
           </div>
         </section>
-        <section className="contact">
+        <section className="section contact">
           <div className="titleBox">
             <h2 id="contact">contact</h2>
             <img
@@ -235,11 +304,10 @@ function App() {
               src={palmtree}
             ></img>
           </div>
-
           <form className="postcard">
             <div className="leftColumn">
               <label className="label textLabel" htmlFor="GET-text">
-                Dear Amanda: *
+                Dear Amanda: <span ClassName="as">*</span>
               </label>
               <textarea
                 className="formInput textarea"
@@ -250,11 +318,11 @@ function App() {
             <div className="rightColumn">
               <div className="stamp">
                 <div className="stamp2">
-                  <img className="palmtree" alt="palmtree" src={palmtree}></img>
+                  <img className="palmtreeIsland" alt="palmtree" src={palmtreeIsland}></img>
                 </div>
               </div>
               <label className="label nameLabel" htmlFor="GET-name">
-                Name *
+                Name <span ClassName="label__asterisk">*</span>
               </label>
               <input
                 className="formInput nameInput"
@@ -263,7 +331,7 @@ function App() {
                 name="name"
               ></input>
               <label className="label emailLabel" htmlFor="GET-email">
-                Email *
+                Email <span ClassName="label__asterisk">*</span>
               </label>
               <input
                 className="formInput emailInput"
@@ -276,7 +344,7 @@ function App() {
               </button>
             </div>
           </form>
-          <div className="arrowBox">
+          <div className="arrowBox contactArrow">
             <a href="#home" className="upArrow">
               <img
                 className="upArrow__arrow"
@@ -288,12 +356,9 @@ function App() {
           </div>
         </section>
       </main>
-      <footer>
-        <span className="copy">
-          <h4>Find me:</h4>
-        </span>
-        <ul className="footerssmm">
-          <li className="ssmm__icon">
+      <footer className="footer">
+        <ul className="footer__ssmmfooter">
+          <li className="icon">
             <a
               ClassName="footerGH"
               href="https://github.com/amandapalma"
@@ -302,7 +367,7 @@ function App() {
               <i className="fab fa-github"></i>
             </a>
           </li>
-          <li className="ssmm__icon">
+          <li className="icon">
             <a
               ClassName="footerLin"
               href="https://www.linkedin.com/in/amanda~palma/"
@@ -311,7 +376,7 @@ function App() {
               <i className="fab fa-linkedin-in"></i>
             </a>
           </li>
-          <li className="ssmm__icon">
+          <li className="icon">
             <a
               ClassName="footerTel"
               href="callto:0034687508122"
@@ -320,7 +385,7 @@ function App() {
               <i className="fas fa-mobile-alt"></i>
             </a>
           </li>
-          <li className="ssmm__icon">
+          <li className="icon">
             <a
               ClassName="footerMail"
               href="mailto:amandapalma00@gmail.com"
@@ -330,14 +395,8 @@ function App() {
             </a>
           </li>
         </ul>
-        <span className="copy">
+        <span className="footer__copy">
           <small>amandapalma ©</small>
-        </span>
-        <span className="copy">
-          <small>(+34) 687 508 122</small>
-        </span>
-        <span className="copy">
-          <small>amandapalma00@gmail.com</small>
         </span>
       </footer>
     </div>
