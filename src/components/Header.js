@@ -1,6 +1,7 @@
 import React from "react";
 import resume from "../documents/Amanda Palma Front.pdf";
 import "../stylesheets/header.scss";
+import SSMMlinks from "./SSMMlinks.js"
 
 const Header = () => {
   return (
@@ -39,18 +40,7 @@ const Header = () => {
                 resume
               </a>
             </li>
-            <li className="ssmmIcon">
-              <i className="fab fa-github"></i>
-            </li>
-            <li className="ssmmIcon">
-              <i className="fab fa-linkedin-in"></i>
-            </li>
-            <li className="ssmmIcon">
-              <i className="fas fa-mobile-alt"></i>
-            </li>
-            <li className="ssmmIcon">
-              <i className="fas fa-envelope"></i>
-            </li>
+            <SSMMlinks></SSMMlinks>
           </ul>
         </div>
       </nav>

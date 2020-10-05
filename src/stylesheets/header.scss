@@ -54,11 +54,11 @@
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  
+
     &:first-child {
       transform-origin: 0% 0%;
     }
-  
+
     &:nth-last-child(2) {
       transform-origin: 0% 100%;
     }
@@ -70,18 +70,14 @@
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
-    
+
     transform-origin: 0% 0%;
     transform: translate(101%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     border-left: solid 1px $color-dark;
     // backdrop-filter: blur(10px);
-    
-  
   }
 }
-
-
 
 .option {
   margin-bottom: 15px;
@@ -114,6 +110,4 @@
     color: $color-primary;
     cursor: pointer;
   }
-
-  
 }

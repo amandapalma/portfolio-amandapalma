@@ -5,8 +5,7 @@ import palmtreeIsland from "../images/palmtree-island.png";
 import uparrow from "../images/up-arrow.svg";
 import profilepic from "../images/amanda-bn.png";
 import Header from "./Header";
-
-
+import Footer from "./Footer";
 
 import "../stylesheets/App.scss";
 
@@ -14,8 +13,7 @@ function App() {
   return (
     <div className="App">
       {/* <Comingsoon></Comingsoon> */}
-   
-    <Header></Header>
+      <Header></Header>
       <main className="main">
         <section id="home" className="home">
           <div className="home__homeBackground"></div>
@@ -40,21 +38,21 @@ function App() {
               <div className="project__cover">
                 <div className="project__buttons">
                   <button className="projectButton codeButton">
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-code"></i>
                   </button>
                   <button className="projectButton webButton">
-                    <i class="fas fa-globe"></i>
+                    <i className="fas fa-globe"></i>
                   </button>
                 </div>
                 <div className="project__description">
                   <h4 className="proyectType">corporative website</h4>
                   <h3 className="proyectName"> A-Team project</h3>
                   <div className="techIcons">
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-react"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-sass"></i>
+                    <i className="fab fa-js"></i>
+                    <i className="fab fa-react"></i>
+                    <i className="fab fa-css3-alt"></i>
+                    <i className="fab fa-html5"></i>
+                    <i className="fab fa-sass"></i>
                   </div>
                 </div>
               </div>
@@ -69,21 +67,21 @@ function App() {
               <div className="project__cover">
                 <div className="project__buttons">
                   <button className="projectButton codeButton">
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-code"></i>
                   </button>
                   <button className="projectButton webButton">
-                    <i class="fas fa-globe"></i>
+                    <i className="fas fa-globe"></i>
                   </button>
                 </div>
                 <div className="project__description">
                   <h4 className="proyectType">corporative website</h4>
                   <h3 className="proyectName"> A-Team project</h3>
                   <div className="techIcons">
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-react"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-sass"></i>
+                    <i className="fab fa-js"></i>
+                    <i className="fab fa-react"></i>
+                    <i className="fab fa-css3-alt"></i>
+                    <i className="fab fa-html5"></i>
+                    <i className="fab fa-sass"></i>
                   </div>
                 </div>
               </div>
@@ -97,21 +95,21 @@ function App() {
               <div className="project__cover">
                 <div className="project__buttons">
                   <button className="projectButton codeButton">
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-code"></i>
                   </button>
                   <button className="projectButton webButton">
-                    <i class="fas fa-globe"></i>
+                    <i className="fas fa-globe"></i>
                   </button>
                 </div>
                 <div className="project__description">
                   <h4 className="proyectType">corporative website</h4>
                   <h3 className="proyectName"> A-Team project</h3>
                   <div className="techIcons">
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-react"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-sass"></i>
+                    <i className="fab fa-js"></i>
+                    <i className="fab fa-react"></i>
+                    <i className="fab fa-css3-alt"></i>
+                    <i className="fab fa-html5"></i>
+                    <i className="fab fa-sass"></i>
                   </div>
                 </div>
               </div>
@@ -125,21 +123,21 @@ function App() {
               <div className="project__cover">
                 <div className="project__buttons">
                   <button className="projectButton codeButton">
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-code"></i>
                   </button>
                   <button className="projectButton webButton">
-                    <i class="fas fa-globe"></i>
+                    <i className="fas fa-globe"></i>
                   </button>
                 </div>
                 <div className="project__description">
                   <h4 className="proyectType">corporative website</h4>
                   <h3 className="proyectName"> A-Team project</h3>
                   <div className="techIcons">
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-react"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-sass"></i>
+                    <i className="fab fa-js"></i>
+                    <i className="fab fa-react"></i>
+                    <i className="fab fa-css3-alt"></i>
+                    <i className="fab fa-html5"></i>
+                    <i className="fab fa-sass"></i>
                   </div>
                 </div>
               </div>
@@ -153,21 +151,21 @@ function App() {
               <div className="project__cover">
                 <div className="project__buttons">
                   <button className="projectButton codeButton">
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-code"></i>
                   </button>
                   <button className="projectButton webButton">
-                    <i class="fas fa-globe"></i>
+                    <i className="fas fa-globe"></i>
                   </button>
                 </div>
                 <div className="project__description">
                   <h4 className="proyectType">corporative website</h4>
                   <h3 className="proyectName"> A-Team project</h3>
                   <div className="techIcons">
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-react"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-sass"></i>
+                    <i className="fab fa-js"></i>
+                    <i className="fab fa-react"></i>
+                    <i className="fab fa-css3-alt"></i>
+                    <i className="fab fa-html5"></i>
+                    <i className="fab fa-sass"></i>
                   </div>
                 </div>
               </div>
@@ -181,21 +179,21 @@ function App() {
               <div className="project__cover">
                 <div className="project__buttons">
                   <button className="projectButton codeButton">
-                    <i class="fas fa-code"></i>
+                    <i className="fas fa-code"></i>
                   </button>
                   <button className="projectButton webButton">
-                    <i class="fas fa-globe"></i>
+                    <i className="fas fa-globe"></i>
                   </button>
                 </div>
                 <div className="project__description">
                   <h4 className="proyectType">corporative website</h4>
                   <h3 className="proyectName"> A-Team project</h3>
                   <div className="techIcons">
-                    <i class="fab fa-js"></i>
-                    <i class="fab fa-react"></i>
-                    <i class="fab fa-css3-alt"></i>
-                    <i class="fab fa-html5"></i>
-                    <i class="fab fa-sass"></i>
+                    <i className="fab fa-js"></i>
+                    <i className="fab fa-react"></i>
+                    <i className="fab fa-css3-alt"></i>
+                    <i className="fab fa-html5"></i>
+                    <i className="fab fa-sass"></i>
                   </div>
                 </div>
               </div>
@@ -230,16 +228,28 @@ function App() {
           <div className="about__aboutBackround"></div>
           <div className="profile">
             <p className="profile__description">
-        
-              Vengo del <strong>diseño</strong>, la <strong>gestión cultural</strong>, del sector 
-              <strong> audiovisual</strong>, y soy <strong>música</strong>. Ahora comienzo una nueva y emocionante etapa como <strong>desarrolladora front end. </strong>Cansada de la inestabilidad laboral y en busca de un entorno creativo que me permitiera crecer profesionalmente me topé con la programación y estoy muy contenta de haberlo hecho. <br></br><br></br>Creo en la cultura y en la tecnología
-              como motores para favorecer el entendimiento y la <strong>solución de
-              problemas</strong> entre las personas y su entorno, desde el respeto, la
-              empatía y el esfuerzo por mejorar. E intento aplicar esto a todo
-              lo que hago, no sólo profesionalmente. <br></br><br></br>
-              Me encantan las plantas, y todo ser viviente. Disfruto mucho aprendendiendo y creo que no podría vivir (bien) sin humor.
-              Actualmente hago música y busco activamente empleo como front. Sugerencias, colaboraciones, y por supuesto a ofertas laborales son bienvenidas.
-              <strong> Contacta conmigo</strong> si quieres que nos conozcamos. Será un placer. ;)
+              Vengo del <strong>diseño</strong>, la{" "}
+              <strong>gestión cultural</strong>, del sector
+              <strong> audiovisual</strong>, y soy <strong>música</strong>.
+              Ahora comienzo una nueva y emocionante etapa como{" "}
+              <strong>desarrolladora front end. </strong>Cansada de la
+              inestabilidad laboral y en busca de un entorno creativo que me
+              permitiera crecer profesionalmente me topé con la programación y
+              estoy muy contenta de haberlo hecho. <br></br>
+              <br></br>Creo en la cultura y en la tecnología como motores para
+              favorecer el entendimiento y la{" "}
+              <strong>solución de problemas</strong> entre las personas y su
+              entorno, desde el respeto, la empatía y el esfuerzo por mejorar. E
+              intento aplicar esto a todo lo que hago, no sólo profesionalmente.{" "}
+              <br></br>
+              <br></br>
+              Me encantan las plantas, y todo ser viviente. Disfruto mucho
+              aprendendiendo y creo que no podría vivir (bien) sin humor.
+              Actualmente hago música y busco activamente empleo como front.
+              Sugerencias, colaboraciones, y por supuesto a ofertas laborales
+              son bienvenidas.
+              <strong> Contacta conmigo</strong> si quieres que nos conozcamos.
+              Será un placer. ;)
             </p>
 
             <div className="profile__imageBox">
@@ -280,7 +290,11 @@ function App() {
             <div className="rightColumn">
               <div className="stamp">
                 <div className="stamp2">
-                  <img className="palmtreeIsland" alt="palmtree" src={palmtreeIsland}></img>
+                  <img
+                    className="palmtreeIsland"
+                    alt="palmtree"
+                    src={palmtreeIsland}
+                  ></img>
                 </div>
               </div>
               <label className="label nameLabel" htmlFor="GET-name">
@@ -302,7 +316,7 @@ function App() {
                 name="email"
               ></input>
               <button type="submit" className="submitInput">
-                send it! &nbsp;&nbsp;<i class="fas fa-paper-plane"></i>
+                send it! &nbsp;&nbsp;<i className="fas fa-paper-plane"></i>
               </button>
             </div>
           </form>
@@ -318,57 +332,7 @@ function App() {
           </div>
         </section>
       </main>
-      <footer className="footer">
-        <ul className="footer__ssmmfooter">
-          <li className="icon">
-            <a
-              ClassName="footerGH"
-              href="https://github.com/amandapalma"
-              alt="github"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-          </li>
-          <li className="icon">
-            <a
-              ClassName="footerLin"
-              href="https://www.linkedin.com/in/amanda~palma/"
-              alt="linkedin"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-          <li className="icon">
-            <a
-              ClassName="footerTel"
-              href="callto:0034687508122"
-              alt="telephone"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fas fa-mobile-alt"></i>
-            </a>
-          </li>
-          <li className="icon">
-            <a
-              ClassName="footerMail"
-              href="mailto:amandapalma00@gmail.com"
-              alt="email"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fas fa-envelope"></i>
-            </a>
-          </li>
-        </ul>
-        <span className="footer__copy">
-          <small>amandapalma ©</small>
-        </span>
-      </footer>
+      <Footer></Footer>
     </div>
   );
 }

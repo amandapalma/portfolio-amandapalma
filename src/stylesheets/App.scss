@@ -345,16 +345,22 @@
   align-items: flex-end;
   color: $color-light;
 
-  &__ssmmfooter {
+  &:only-child{
     display: flex;
     justify-content: space-between;
     width: 80px;
-
-    & .icon {
-      &:hover {
-        color: $color-dark;
-        cursor: pointer;
-      }
-    }
   }
+
+  // &__ssmmfooter {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   width: 80px;
+
+  //   & .icon {
+  //     &:hover {
+  //       color: $color-dark;
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
 }
