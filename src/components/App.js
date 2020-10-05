@@ -4,6 +4,9 @@ import palmtree from "../images/palmtreeicon.png";
 import palmtreeIsland from "../images/palmtree-island.png";
 import uparrow from "../images/up-arrow.svg";
 import profilepic from "../images/amanda-bn.png";
+import Header from "./Header";
+
+
 
 import "../stylesheets/App.scss";
 
@@ -11,49 +14,8 @@ function App() {
   return (
     <div className="App">
       {/* <Comingsoon></Comingsoon> */}
-      <header className="fixHeader">
-        <div className="fixHeader__closeIcon">
-          <i className="fas fa-times"></i>
-        </div>
-        <nav className="fixHeader__menu">
-          <ul className="nav">
-            <li className="nav__option">
-              <a href="#projects" alt="go to projects">
-                projects
-              </a>
-            </li>
-            <li className="nav__option">
-              <a href="#about" alt="go to projects">
-                about
-              </a>
-            </li>
-            <li className="nav__option">
-              <a href="#contact" alt="go to projects">
-                contact
-              </a>
-            </li>
-            <li className="nav__option">
-              <a href="#resume" alt="go to projects">
-                resume
-              </a>
-            </li>
-          </ul>
-          <ul className="ssmm">
-            <li className="ssmm__icon">
-              <i className="fab fa-github"></i>
-            </li>
-            <li className="ssmm__icon">
-              <i className="fab fa-linkedin-in"></i>
-            </li>
-            <li className="ssmm__icon">
-              <i className="fas fa-mobile-alt"></i>
-            </li>
-            <li className="ssmm__icon">
-              <i className="fas fa-envelope"></i>
-            </li>
-          </ul>
-        </nav>
-      </header>
+   
+    <Header></Header>
       <main className="main">
         <section id="home" className="home">
           <div className="home__homeBackground"></div>
@@ -363,6 +325,8 @@ function App() {
               ClassName="footerGH"
               href="https://github.com/amandapalma"
               alt="github"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-github"></i>
             </a>
@@ -372,6 +336,8 @@ function App() {
               ClassName="footerLin"
               href="https://www.linkedin.com/in/amanda~palma/"
               alt="linkedin"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-linkedin-in"></i>
             </a>
@@ -381,6 +347,8 @@ function App() {
               ClassName="footerTel"
               href="callto:0034687508122"
               alt="telephone"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fas fa-mobile-alt"></i>
             </a>
@@ -390,6 +358,8 @@ function App() {
               ClassName="footerMail"
               href="mailto:amandapalma00@gmail.com"
               alt="email"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fas fa-envelope"></i>
             </a>
