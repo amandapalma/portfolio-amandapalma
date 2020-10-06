@@ -1,0 +1,19 @@
+@import "../stylesheets/reset.scss";
+@import "../stylesheets/mixins.scss";
+@import "../stylesheets/variables.scss";
+
+.ssmmMenu {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  // border: 2px solid red;
+  color: $color-secondary;
+}
+.ssmmIcon {
+  margin-top: 5px;
+
+  &:hover {
+    color: $color-primary;
+    cursor: pointer;
+  }
+}

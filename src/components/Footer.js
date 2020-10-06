@@ -1,6 +1,6 @@
 import React from "react";
 import SSMMlinks from "./SSMMlinks";
-import "../stylesheets/App.scss";
+import "../stylesheets/footer.scss";
 
 const Footer = ()=>{return(
     <footer className="footer" >

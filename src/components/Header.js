@@ -1,7 +1,7 @@
 import React from "react";
 import resume from "../documents/Amanda Palma Front.pdf";
 import "../stylesheets/header.scss";
-import SSMMlinks from "./SSMMlinks.js"
+import SSMMlinks from "./SSMMlinks.js";
 
 const Header = () => {
   return (

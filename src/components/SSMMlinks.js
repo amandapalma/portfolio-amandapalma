@@ -1,9 +1,10 @@
 import React from "react";
+import "../stylesheets/ssmmlinks.scss";
 
 
 
 const SSMMlinks = ()=>{return (
- <div>
+<div className="ssmmMenu">
    <li className="ssmmIcon">
   <a
     ClassName="footerGH"
