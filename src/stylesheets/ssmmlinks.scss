@@ -5,9 +5,12 @@
 .ssmmMenu {
   display: flex;
   justify-content: space-between;
-  width: 80px;
-  // border: 2px solid red;
+  width: 55px;
   color: $color-secondary;
+
+  @include tablet{
+    width: 80px;
+  }
 }
 .ssmmIcon {
   margin-top: 5px;

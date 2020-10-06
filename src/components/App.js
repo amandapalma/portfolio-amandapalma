@@ -1,9 +1,9 @@
 import React from "react";
 // import Comingsoon from "./Comingsoon";
 import palmtree from "../images/palmtreeicon.png";
-import palmtreeIsland from "../images/palmtree-island.png";
+// import palmtreeIsland from "../images/palmtree-island.png";
 import uparrow from "../images/up-arrow.svg";
-import profilepic from "../images/amanda-bn.png";
+// import profilepic from "../images/amanda-bn.png";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -216,7 +216,7 @@ function App() {
             </a>
           </div>
         </section>
-        <section className="section about">
+        {/* <section className="section about">
           <div className="titleBox">
             <h2 id="about">about</h2>
             <img
@@ -251,7 +251,6 @@ function App() {
               <strong> Contacta conmigo</strong> si quieres que nos conozcamos.
               Será un placer. ;)
             </p>
-
             <div className="profile__imageBox">
               <img className="profileImg" src={profilepic} alt="profile"></img>
             </div>
@@ -266,8 +265,8 @@ function App() {
               <p className="upArrow__upText">up</p>
             </a>
           </div>
-        </section>
-        <section className="section contact">
+        </section> */}
+        {/* <section className="section contact">
           <div className="titleBox">
             <h2 id="contact">contact</h2>
             <img
@@ -330,7 +329,7 @@ function App() {
               <p className="upArrow__upText">up</p>
             </a>
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer></Footer>
     </div>
