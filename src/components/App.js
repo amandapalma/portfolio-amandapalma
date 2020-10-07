@@ -3,7 +3,8 @@ import React from "react";
 import palmtree from "../images/palmtreeicon.png";
 import palmtreeIsland from "../images/palmtree-island.png";
 import uparrow from "../images/up-arrow.svg";
-// import profilepic from "../images/amanda-bn.png";
+import profilepic from "../images/illustration.png";
+
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -11,11 +12,11 @@ import "../stylesheets/App.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="home">
       {/* <Comingsoon></Comingsoon> */}
       <Header></Header>
       <main className="main">
-        <section id="home" className="home">
+        <section  className="home">
           <div className="home__homeBackground"></div>
           <h1 className="home__mainTitle">
             <span>ho</span>
@@ -216,7 +217,7 @@ function App() {
             </a>
           </div>
         </section>
-        {/* <section className="section about">
+        <section className="section about">
           <div className="titleBox">
             <h2 id="about">about</h2>
             <img
@@ -225,7 +226,7 @@ function App() {
               src={palmtree}
             ></img>
           </div>
-          <div className="about__aboutBackround"></div>
+          {/* <div className="about__aboutBackround"></div> */}
           <div className="profile">
             <p className="profile__description">
               Vengo del <strong>diseño</strong>, la{" "}
@@ -255,7 +256,7 @@ function App() {
               <img className="profileImg" src={profilepic} alt="profile"></img>
             </div>
           </div>
-          <div className="arrowBox">
+          {/* <div className="arrowBox">
             <a href="#home" className="upArrow">
               <img
                 className="upArrow__arrow"
@@ -264,8 +265,8 @@ function App() {
               ></img>
               <p className="upArrow__upText">up</p>
             </a>
-          </div>
-        </section> */}
+          </div> */}
+        </section>
         <section className="section contact">
           <div className="titleBox">
             <h2 id="contact">contact</h2>

@@ -67,14 +67,14 @@
 
 .titleBox {
   display: flex;
-  // margin-left: 0px;
-  margin-bottom: 80px;
-  margin-top: 80px;
+  margin: 40px auto 40px auto;
+  
   border: 1px dotted blue;
 
-  // @include desktop {
-  //   margin-left: 350px;
-  // }
+  @include desktop {
+    margin: 80px auto 80px auto;
+    
+  }
 }
 
 .palmtree {
@@ -250,46 +250,79 @@
 
 //ABOUT
 
-.about {
-  &__aboutBackround {
-    width: auto;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 100vh 175vh;
-    border-color: transparent transparent $color-primary transparent;
-    position: absolute;
-    top: 100;
-    right: 0;
-    z-index: -1;
-    // margin: 5vh;
+// .about {
+//   border: 3px solid greenyellow;
+//   position: relative;
+
+//   &__aboutBackround {
+    
+//     border-style: solid;
+//     border-width: 0 0 100vh 175vh;
+//     border-color: transparent transparent $color-primary transparent;
+//     position: absolute;
+//     top: 100;
+//     right: 0;
+//     z-index: -1;
+//     // margin: 35px;
+//   }
+// }
+
+.about{
+justify-content: space-between;
+
+  border: 3px solid greenyellow;
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+  overflow: hidden;
+ 
+	&::after{
+		content: '';
+		position: absolute;
+		background-color: $color-primary;
+		padding-bottom: 141.42136%;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		transform: rotate(65.5deg) ;
+    transform-origin: left bottom;
+  z-index:-1;}
   }
-}
+
 
 .profile {
+  margin: 0 auto 15px auto;
+  width: 80%;
+  height: 600px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 100px;
+  grid-template-columns: 1fr 1.4fr;
+ column-gap: 150px;
+  
 
-  border: 1px solid blue;
+  // border: 3px dotted blue;
 
   &__description {
     text-align: justify;
-    align-self: flex-start;
-
-    border: 1px solid cyan;
+    // border: 1px solid cyan;
   }
 
   &__imageBox {
+    display:flex;
+    align-items: flex-end;
     .profileImg {
       max-width: 100%;
       height: auto;
       object-fit: cover;
-      border: 1px solid orangered;
+      // border: 1px solid orangered;
+      box-shadow: 100px;
     }
   }
 }
 
 //CONTACT
+
+
 
 .postcard {
   align-self: center;
