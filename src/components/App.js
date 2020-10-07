@@ -1,7 +1,7 @@
 import React from "react";
 // import Comingsoon from "./Comingsoon";
 import palmtree from "../images/palmtreeicon.png";
-// import palmtreeIsland from "../images/palmtree-island.png";
+import palmtreeIsland from "../images/palmtree-island.png";
 import uparrow from "../images/up-arrow.svg";
 // import profilepic from "../images/amanda-bn.png";
 import Header from "./Header";
@@ -266,7 +266,7 @@ function App() {
             </a>
           </div>
         </section> */}
-        {/* <section className="section contact">
+        <section className="section contact">
           <div className="titleBox">
             <h2 id="contact">contact</h2>
             <img
@@ -285,6 +285,9 @@ function App() {
                 name="textarea"
                 rows="10"
               ></textarea>
+              <button type="submit" className="submitMobile">
+                send it! &nbsp;&nbsp;<i className="fas fa-paper-plane"></i>
+              </button>
             </div>
             <div className="rightColumn">
               <div className="stamp">
@@ -314,7 +317,7 @@ function App() {
                 type="email"
                 name="email"
               ></input>
-              <button type="submit" className="submitInput">
+              <button type="submit" className="submitTablet">
                 send it! &nbsp;&nbsp;<i className="fas fa-paper-plane"></i>
               </button>
             </div>
@@ -329,7 +332,7 @@ function App() {
               <p className="upArrow__upText">up</p>
             </a>
           </div>
-        </section> */}
+        </section>
       </main>
       <Footer></Footer>
     </div>
