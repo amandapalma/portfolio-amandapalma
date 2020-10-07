@@ -3,7 +3,7 @@
 @import "../stylesheets/variables.scss";
 
 //MAIN
-.App {
+.main {
   border: 2px dashed salmon;
 
   margin: auto;
@@ -11,9 +11,8 @@
   position: relative;
 
   @include tablet {
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 35px;
+    padding: 35px;
+    
   }
   // background-color: lightcyan;
 }
