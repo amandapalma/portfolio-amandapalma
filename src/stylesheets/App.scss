@@ -4,8 +4,6 @@
 
 //MAIN
 .main {
-  border: 2px dashed salmon;
-
   margin: auto;
   width: 100%;
   position: relative;
@@ -13,14 +11,11 @@
   @include tablet {
     padding: 35px;
   }
-  // background-color: lightcyan;
 }
 
 //HOME
 
 .home {
-  border: 2px dotted grey;
-
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -45,10 +40,6 @@
     @include desktop {
       height: 93%;
     }
-
-    // @include desktop{
-    //   height: 96%;
-    // }
   }
 
   &__mainTitle {
@@ -68,12 +59,12 @@
 .titleBox {
   display: flex;
   margin: 40px auto 40px auto;
-  
-  border: 1px dotted blue;
 
+  @include tablet {
+    margin: 60px auto 60px auto;
+  }
   @include desktop {
     margin: 80px auto 80px auto;
-    
   }
 }
 
@@ -124,12 +115,11 @@
   align-items: center;
   transition: all 0.5s;
 
-  @include desktop{
+  @include desktop {
     &:hover :first-child {
       transform: translateY(-20px);
     }
   }
-  
 
   &__arrow {
     height: 15px;
@@ -148,7 +138,7 @@
 .contactArrow {
   top: 25px;
 
-  @include tablet{
+  @include tablet {
     top: 30px;
     margin-bottom: 10px;
   }
@@ -156,9 +146,9 @@
 
 //PROJECTS
 
-.projects {
-  border: 1px dashed orange;
-}
+// .projects {
+
+// }
 
 .workslist {
   display: grid;
@@ -255,7 +245,7 @@
 //   position: relative;
 
 //   &__aboutBackround {
-    
+
 //     border-style: solid;
 //     border-width: 0 0 100vh 175vh;
 //     border-color: transparent transparent $color-primary transparent;
@@ -267,62 +257,130 @@
 //   }
 // }
 
-.about{
-justify-content: space-between;
-
+.about {
   border: 3px solid greenyellow;
-	position: relative;
-	width: 100%;
-	min-height: 100vh;
-	margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
   overflow: hidden;
- 
-	&::after{
-		content: '';
-		position: absolute;
-		background-color: $color-primary;
-		padding-bottom: 141.42136%;
-		width: 100%;
-		bottom: 0;
-		left: 0;
-		transform: rotate(65.5deg) ;
-    transform-origin: left bottom;
-  z-index:-1;}
-  }
+  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
 
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $color-primary;
+    padding-bottom: 141.42136%;
+    width: 100%;
+    bottom: -80px;
+    // bottom: 0;
+    left: 0;
+    transform: rotate(65.5deg);
+    transform-origin: left bottom;
+    z-index: -1;
+  }
+}
 
 .profile {
-  margin: 0 auto 15px auto;
-  width: 80%;
-  height: 600px;
+  margin: 0 auto 0 auto;
+  width: auto;
+  height: 80vh;
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
- column-gap: 150px;
-  
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 2px dotted red;
+
+  @include tablet {
+    grid-column-gap: 0px;
+    width: 70%;
+  }
+
+  @include desktop {
+    grid-column-gap: 50px;
+  }
 
   // border: 3px dotted blue;
 
   &__description {
     text-align: justify;
-    // border: 1px solid cyan;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    line-height: 18px;
+
+    @include desktop {
+      grid-row: 1/4;
+      grid-column: 1/2;
+    }
+  }
+
+  &__skills {
+    display: grid;
+
+    font-size: 20px;
+    grid-template-columns: repeat(5, 30px);
+    grid-template-rows: repeat(4, 40px);
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-top: 30px;
+
+    @include tablet {
+      font-size: 30px;
+      grid-template-columns: repeat(5, 40px);
+      grid-template-rows: repeat(4, 50px);
+    }
+
+    @include desktop {
+      font-size: 40px;
+      grid-template-columns: repeat(5, 70px);
+      grid-template-rows: repeat(4, 60px);
+      grid-row: 1/2;
+      grid-column: 2/3;
+      margin-left: 30px;
+      margin-top: 0px;
+    }
+  }
+
+  .slkillIcon {
+    width: 18px;
+    margin: auto;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    @include tablet {
+      width: 28px;
+    }
+
+    @include desktop {
+      width: 40px;
+    }
   }
 
   &__imageBox {
-    display:flex;
-    align-items: flex-end;
+    // border: 3px solid violet;
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-top: 30px;
+
+    @include desktop {
+      grid-row: 2/4;
+      grid-column: 2/3;
+      margin-top: 0px;
+    }
     .profileImg {
       max-width: 100%;
       height: auto;
-      object-fit: cover;
-      // border: 1px solid orangered;
-      box-shadow: 100px;
+      object-fit: contain;
+
+      width: 100%;
+      height: 100%;
     }
   }
 }
 
 //CONTACT
-
-
 
 .postcard {
   align-self: center;
@@ -415,7 +473,7 @@ justify-content: space-between;
     border-bottom: 0.5px dotted $color-primary;
   }
 
-  @include tablet{
+  @include tablet {
     font-size: 25px;
   }
 }

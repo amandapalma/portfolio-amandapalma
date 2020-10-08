@@ -97,6 +97,9 @@ body {
   font-size: 10px;
 
   @include tablet{
+    font-size: 12px;
+  }
+  @include desktop{
     font-size: 14px;
   }
  
