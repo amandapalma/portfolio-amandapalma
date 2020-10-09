@@ -136,6 +136,9 @@ const Projects = () => {
             <button className="projectButton webButton">
               <i className="fas fa-globe"></i>
             </button>
+            <button className="projectButton">
+            <i className="fas fa-surprise"></i>
+            </button>
           </div>
           <div className="project__description">
             <h4 className="proyectType">corporative website</h4>
@@ -159,11 +162,11 @@ const Projects = () => {
         <div className="project__cover">
           <div className="project__buttons">
             <button className="projectButton codeButton">
-              <i className="fas fa-code"></i>
+            <i className="fas fa-eye"></i>
             </button>
-            <button className="projectButton webButton">
+            {/* <button className="projectButton webButton">
               <i className="fas fa-globe"></i>
-            </button>
+            </button> */}
           </div>
           <div className="project__description">
             <h4 className="proyectType">corporative website</h4>
