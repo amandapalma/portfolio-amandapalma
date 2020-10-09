@@ -7,16 +7,19 @@
   justify-content: space-between;
   width: 55px;
   color: $color-secondary;
+  cursor: pointer;
 
-  @include tablet{
+  @include tablet {
     width: 80px;
   }
 }
 .ssmmIcon {
-  margin-top: 5px;
-
+  margin-top: 10px;
   &:hover {
     color: $color-primary;
-    cursor: pointer;
+  }
+
+  @include tablet {
+    margin-top: 15px;
   }
 }

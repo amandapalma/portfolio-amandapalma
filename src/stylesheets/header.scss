@@ -101,6 +101,8 @@
 .option {
   margin-bottom: 8px;
   position: relative;
+  padding-top:10px;
+ 
 
   @include tablet {
     margin-bottom: 15px;
@@ -110,7 +112,7 @@
     content: "";
     position: absolute;
     width: 0;
-    height: 7px;
+    height: 6px;
     bottom: 0;
     left: 0;
     background-color: $color-secondary;
@@ -119,6 +121,7 @@
     opacity: 0.3;
     cursor: pointer;
     z-index: 2;
+
   }
 
   &:hover:before {

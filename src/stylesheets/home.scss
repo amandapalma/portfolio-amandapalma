@@ -1,0 +1,40 @@
+@import "../stylesheets/reset.scss";
+@import "../stylesheets/mixins.scss";
+@import "../stylesheets/variables.scss";
+
+//HOME
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  
+    &__homeBackground {
+      background-color: $color-primary;
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      z-index: -1;
+  
+      @include tablet {
+        height: 96%;
+      }
+  
+      @include desktop {
+        height: 93%;
+      }
+    }
+  
+    &__mainTitle {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
