@@ -18,7 +18,7 @@ const Contact = () => {
       <form className="postcard">
         <div className="leftColumn">
           <label className="label textLabel" htmlFor="GET-text">
-            Dear Amanda: <span ClassName="as">*</span>
+            Dear Amanda: <span className="as">*</span>
           </label>
           <textarea
             className="formInput textarea"
@@ -40,7 +40,7 @@ const Contact = () => {
             </div>
           </div>
           <label className="label nameLabel" htmlFor="GET-name">
-            Name <span ClassName="label__asterisk">*</span>
+            Name <span className="label__asterisk">*</span>
           </label>
           <input
             className="formInput nameInput"
@@ -49,7 +49,7 @@ const Contact = () => {
             name="name"
           ></input>
           <label className="label emailLabel" htmlFor="GET-email">
-            Email <span ClassName="label__asterisk">*</span>
+            Email <span className="label__asterisk">*</span>
           </label>
           <input
             className="formInput emailInput"

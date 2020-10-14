@@ -1,43 +1,43 @@
-"projects" [
+[
     {
     "id":0,
-    "buttonIcon1": "code",
-    "buttonIcon2": "web",
+    "button1": "code",
+    "button2": "web",
     "image":"",
    "type": "Portfolio Website",
     "name": "amandapalma portfolio",
-    "technologies":{
+    "tech":{
             "a": "HTML",
             "b": "CSS",
             "c": "Sass",
-           " d": "React",
+           " d": "React"
         }
     },
 
     {
    "id":1,
-    "buttonIcon1": "code",
-    "buttonIcon2": "web",
+    "button1": "code",
+    "button2": "web",
     "image":"",
     "type": "Character Finder Website",
     "name": "Rick & Morty",
-    "technologies":{
+    "tech":{
             "a": "HTML",
             "b": "CSS",
             "c": "Sass",
-            "d": "React",
+            "d": "React"
         }
     },
 
     {
     "id":2,
-    "buttonIcon1": "code",
-    "buttonIcon2": "web",
+    "button1": "code",
+    "button2": "web",
     
     "image":"",
     "type": "Customized Profile Cards Generator Web App",
     "name": "Kard-MA",
-    "technologies":{
+    "tech":{
         "a": "HTML",
         "b": "CSS",
         "c": "Sass",
@@ -47,13 +47,13 @@
 
     {
     "id":3,
-    "buttonIcon1": "code",
-    "buttonIcon2": "web",
+    "button1": "code",
+    "button2": "web",
     
     "image":"",
     "type": "Responsive Corporate Website",
     "name": "Anonimous",
-    "technologies":{
+    "tech":{
        "a": "HTML",
        "b": "CSS",
         "c": "Sass"
@@ -62,13 +62,13 @@
 
     {
     "id":4,
-    "buttonIcon1": "code",
-    "buttonIcon2": "web",
-    "buttonIcon3": "surprise",
+    "button1": "code",
+    "button2": "web",
+    "button3": "surprise",
     "image":"",
     "type": "Responsive Corporate Website",
     "name": "A-Team Project",
-    "technologies":{
+    "tech":{
         "a": "HTML",
         "b": "CSS",
        "c": "Sass"
@@ -77,28 +77,28 @@
 
     {
     "id":5,
-    "buttonIcon1": "code",
-    "buttonIcon2": "web",
+    "button1": "code",
+    "button2": "web",
     "image":"",
     "type": "Series Finder Website",
     "name": "Tarsier",
-    "technologies":{
+    "tech":{
         "a": "HTML",
         "b": "CSS",
-        "c": "Sass"
+        "c": "Sass",
         "d":"JS"
         }
     },
 
     {
     "id":6,
-    "buttonIcon1": "code",
-    "buttonIcon2": "web",
-    "buttonIcon3": "surprise",
+    "button1": "code",
+    "button2": "web",
+    "button3": "surprise",
     "image":"",
     "type": "Website Code Refactoring",
     "name": "Sailor Moon Awesome Profile Cards",
-    "technologies":{
+    "tech":{
         "a": "HTML",
         "b": "CSS",
         "c": "Sass",
@@ -108,11 +108,11 @@
     
     {
     "id":7,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "Editorial",
     "name": "Artefacto Magazine",
-    "technologies":{
+    "tech":{
         "a": "PH",
         "b": "IL",
         "c": "IN"
@@ -122,102 +122,102 @@
 
     {
     "id":8,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "Visual Identity",
     "name": "Lemur Agency",
-    "technologies":{
-        "a": "IL",
+    "tech":{
+        "a": "IL"
         }
     },
 
     {
     "id":9,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "Visual Identity",
     "name": "Thinking Company",
-    "technologies":{
-        "a": "IL",
+    "tech":{
+        "a": "IL"
         }
     },
 
     {
     "id":10,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "Advertising",
     "name": "Dr Bar",
-    "technologies":{
+    "tech":{
         "a": "IL",
-        "b": "PH",
+        "b": "PH"
         }
     },
 
     {
     "id":10,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "Advertising",
     "name": "No Hay Crisis Creativa Festival",
-    "technologies":{
+    "tech":{
         "a": "IL",
-        "b": "PH",
+        "b": "PH"
         }
     },
 
     {
     "id":11,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "Advertising",
     "name": "No Hay Crisis Creativa Festival",
-    "technologies":{
+    "tech":{
         "a": "IL",
-        "b": "PH",
+        "b": "PH"
         }
     },
 
     {
     "id":12,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "Visual Identity",
     "name": "Ministerio de las Ideas",
-    "technologies":{
-        "a": "IL",
+    "tech":{
+        "a": "IL"
         }
     },
 
     {
     "id":13,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "visual identity",
     "name": "ministerio de las ideas",
-    "technologies":{
-        "a": "IL",
+    "tech":{
+        "a": "IL"
         }
     },
 
     {
     "id":14,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "drawing",
     "name": "bowie",
-    "technologies":{
-        "a": "pencil",
+    "tech":{
+        "a": "pencil"
         }
     },
 
     {
     "id":15,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "visual identity & advertising",
     "name": "cafe cicus",
-    "technologies":{
+    "tech":{
         "a": "PH",
         "b": "IL"
         }
@@ -225,11 +225,11 @@
 
     {
    "id":16,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "advertising",
     "name": "sada tings",
-    "technologies":{
+    "tech":{
         "a": "PH",
         "b": "IL"
         }
@@ -237,22 +237,22 @@
 
     {
     "id":17,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "visual identity",
     "name": "vermut all stars",
-    "technologies":{
-        "a": "IL",
+    "tech":{
+        "a": "IL"
         }
     },
 
     {
     "id":18,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "drawing",
     "name": "pale blue eyes",
-    "technologies":{
+    "tech":{
         "a": "pencil",
         "b": "PH"
         }
@@ -260,11 +260,11 @@
 
     {
     "id":19,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "advertising",
     "name": "adriano",
-    "technologies":{
+    "tech":{
         "a": "IL",
         "b": "PH"
         }
@@ -272,13 +272,12 @@
 
     {
     "id":20,
-    "buttonIcon1": "eye",
+    "button1": "eye",
     "image":"",
     "type": "visual identity & naming",
     "name": "oh! sugar",
-    "technologies":{
-        "a": "IL",
+    "tech":{
+        "a": "IL"
         }
     }
-
 ]

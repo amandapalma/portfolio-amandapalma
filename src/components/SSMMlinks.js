@@ -7,7 +7,7 @@ const SSMMlinks = ()=>{return (
 <div className="ssmmMenu">
    <li className="ssmmIcon">
   <a
-    ClassName="footerGH"
+    className="footerGH"
     href="https://github.com/amandapalma"
     alt="github"
     target="_blank"
@@ -18,7 +18,7 @@ const SSMMlinks = ()=>{return (
 </li>
  <li className="ssmmIcon">
   <a
-    ClassName="footerLin"
+    className="footerLin"
     href="https://www.linkedin.com/in/amanda~palma/"
     alt="linkedin"
     target="_blank"
@@ -29,7 +29,7 @@ const SSMMlinks = ()=>{return (
 </li>
  <li className="ssmmIcon">
   <a
-    ClassName="footerTel"
+    className="footerTel"
     href="callto:0034687508122"
     alt="telephone"
     target="_blank"
@@ -40,7 +40,7 @@ const SSMMlinks = ()=>{return (
 </li>
  <li className="ssmmIcon">
   <a
-    ClassName="footerMail"
+    className="footerMail"
     href="mailto:amandapalma00@gmail.com"
     alt="email"
     target="_blank"

@@ -19,7 +19,7 @@ function Comingsoon() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-github"></i>
+            <i className="fab fa-github"></i>
           </a>
         </li>
         <li className="link">
@@ -39,7 +39,7 @@ function Comingsoon() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fab fa-twitter"></i>
+            <i className="fab fa-twitter"></i>
           </a>
         </li>
         <li className="link">
@@ -49,7 +49,7 @@ function Comingsoon() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i class="fas fa-envelope"></i>
+            <i className="fas fa-envelope"></i>
           </a>
         </li>
       </ul>
