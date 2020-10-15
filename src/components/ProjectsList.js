@@ -7,7 +7,7 @@ import palmtree from "../images/palmtreeicon.png";
 const ProjectsList = (props) => {
   // console.log(props);
   const projectList = props.projects.map((project) => {
-    console.log(project.tech.a);
+    // console.log(project.tech.a);
     return (
       <Project
         key={project.id}

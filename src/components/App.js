@@ -1,7 +1,7 @@
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 // import Comingsoon from "./Comingsoon";
 import data from "../data/data.json";
-import {link, Route, Switch} from 'react-router-dom';
+import {  Route, Switch } from "react-router-dom";
 
 import Header from "./Header";
 import Home from "./Home";
@@ -13,37 +13,46 @@ import Footer from "./Footer";
 import ProjectDetail from "./ProjectDetail";
 import "../stylesheets/App.scss";
 
-
-
-
-
 function App() {
-
   const [projects, setProjects] = useState([]);
- 
-  
-  useEffect(()=>{setProjects(data);}, [])
+  useEffect(() => {
+    setProjects(data);
+  }, []);
+
+  const renderProjectDetail = () => {
+
+    return (<ProjectDetail projects={projects} ></ProjectDetail>);
+
+
+    // const routeProjectId = props.match.params.id;
+   
+    // const project = projects.find((project) => project.id === routeProjectId);
+
+    // if (project) {
+    //   return (<ProjectDetail></ProjectDetail>);
+    // } else {
+    //   return "proyecto no encontrado";
+    // }
+  };
 
   return (
-
-   
-
     <div className="App" id="home">
       {/* <Comingsoon></Comingsoon> */}
       <Header></Header>
       <main className="main">
         <Home></Home>
-        <Switch><ProjectDetail></ProjectDetail></Switch> 
+        <Switch>
+          <Route exact path="/project/:id" render={renderProjectDetail}></Route>
+        </Switch>
         <ProjectsList projects={projects}></ProjectsList>
-       
+
         <About></About>
         <Contact></Contact>
       </main>
       <Footer></Footer>
       {/* <DesignProject></DesignProject> */}
     </div>
-     
   );
 }
- 
+
 export default App;
