@@ -1,0 +1,88 @@
+@import "../stylesheets/reset.scss";
+@import "../stylesheets/mixins.scss";
+@import "../stylesheets/variables.scss";
+
+
+.project {
+    position: relative;
+    overflow: hidden;
+    // padding: 10px;
+    // background-color: yellow;
+    
+   
+  
+    &__image {
+      width: 100%;
+      object-fit: contain;
+      transition: all 0.5s;
+      // background-color: violet;
+      // border: 1 px solid red;
+    
+    }
+  
+    &__cover {
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+  
+      height: 100%;
+      width: 100%;
+  
+      position: absolute;
+      bottom: 0;
+  
+      transition: all 0.3s ease-out;
+  
+      background-color: $color-primary;
+  
+      &:hover {
+        background-color: $color-secondary;
+        opacity: 1;
+      }
+    }
+  
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+      margin-bottom: auto;
+      width: 50px;
+  
+      @include tablet {
+        width: 70px;
+      }
+    }
+    .projectButton {
+      margin-bottom: 10px;
+      border: none;
+      padding: 5px;
+      background-color: $color-light;
+      transition: all 0.3s ease-out;
+  
+      &:hover {
+        background-color: $color-dark;
+        color: $color-light;
+      }
+    }
+  
+    &__description {
+      align-self: flex-start;
+    }
+  
+    .techIcons {
+      color: $color-light;
+      font-size: 10px;
+      width: 80px;
+      display: flex;
+      justify-content: space-between;
+  
+      @include tablet {
+        font-size: 10px;
+      }
+  
+      @include tablet {
+        font-size: 15px;
+        width: 100px;
+      }
+    }
+  }

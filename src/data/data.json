@@ -3,7 +3,7 @@
     "id":0,
     "button1": "code",
     "button2": "web",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
    "type": "Portfolio Website",
     "name": "amandapalma portfolio",
     "tech":{
@@ -18,7 +18,7 @@
    "id":1,
     "button1": "code",
     "button2": "web",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "Character Finder Website",
     "name": "Rick & Morty",
     "tech":{
@@ -34,7 +34,7 @@
     "button1": "code",
     "button2": "web",
     
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "Customized Profile Cards Generator Web App",
     "name": "Kard-MA",
     "tech":{
@@ -50,7 +50,7 @@
     "button1": "code",
     "button2": "web",
     
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "Responsive Corporate Website",
     "name": "Anonimous",
     "tech":{
@@ -65,7 +65,7 @@
     "button1": "code",
     "button2": "web",
     "button3": "surprise",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "Responsive Corporate Website",
     "name": "A-Team Project",
     "tech":{
@@ -79,7 +79,7 @@
     "id":5,
     "button1": "code",
     "button2": "web",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "Series Finder Website",
     "name": "Tarsier",
     "tech":{
@@ -95,7 +95,7 @@
     "button1": "code",
     "button2": "web",
     "button3": "surprise",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "Website Code Refactoring",
     "name": "Sailor Moon Awesome Profile Cards",
     "tech":{
@@ -109,7 +109,7 @@
     {
     "id":7,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "Editorial",
     "name": "Artefacto Magazine",
     "tech":{
@@ -123,7 +123,7 @@
     {
     "id":8,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "Visual Identity",
     "name": "Lemur Agency",
     "tech":{
@@ -134,7 +134,7 @@
     {
     "id":9,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "Visual Identity",
     "name": "Thinking Company",
     "tech":{
@@ -145,7 +145,7 @@
     {
     "id":10,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "Advertising",
     "name": "Dr Bar",
     "tech":{
@@ -155,21 +155,9 @@
     },
 
     {
-    "id":10,
-    "button1": "eye",
-    "image":"",
-    "type": "Advertising",
-    "name": "No Hay Crisis Creativa Festival",
-    "tech":{
-        "a": "IL",
-        "b": "PH"
-        }
-    },
-
-    {
     "id":11,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "Advertising",
     "name": "No Hay Crisis Creativa Festival",
     "tech":{
@@ -181,7 +169,7 @@
     {
     "id":12,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "Visual Identity",
     "name": "Ministerio de las Ideas",
     "tech":{
@@ -192,7 +180,7 @@
     {
     "id":13,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "visual identity",
     "name": "ministerio de las ideas",
     "tech":{
@@ -203,7 +191,7 @@
     {
     "id":14,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "drawing",
     "name": "bowie",
     "tech":{
@@ -214,7 +202,7 @@
     {
     "id":15,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "visual identity & advertising",
     "name": "cafe cicus",
     "tech":{
@@ -226,7 +214,7 @@
     {
    "id":16,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "advertising",
     "name": "sada tings",
     "tech":{
@@ -238,7 +226,7 @@
     {
     "id":17,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "visual identity",
     "name": "vermut all stars",
     "tech":{
@@ -249,7 +237,7 @@
     {
     "id":18,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "drawing",
     "name": "pale blue eyes",
     "tech":{
@@ -261,7 +249,7 @@
     {
     "id":19,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "advertising",
     "name": "adriano",
     "tech":{
@@ -273,7 +261,7 @@
     {
     "id":20,
     "button1": "eye",
-    "image":"",
+    "image":"https://via.placeholder.com/680x450",
     "type": "visual identity & naming",
     "name": "oh! sugar",
     "tech":{
