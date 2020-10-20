@@ -2,40 +2,63 @@
 @import "../stylesheets/mixins.scss";
 @import "../stylesheets/variables.scss";
 
+.designproject {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
 
-.designproject{
+  &__description {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 50px;
+    width: 50%;
+    margin: auto;
+  }
+
+  &__imageContainer {
+    margin: auto;
+    width: 1000px;
+    border: 1px solid red;
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+    &__projectImage {
+      width: 100%;
+      object-fit: contain;
+      height: auto;
+    }
+  }
+}
+.details {
+  margin-bottom: 25px;
+  // border: 1px solid red;
+}
+
+.backArrow {
+    transform: rotate(-90deg);
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
-   
-
-    &__description{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        column-gap: 50px;
-        width: 50%;
-        margin: auto;
-
-        
+    align-items: center;
+    // transition: all 0.5s;
+  
+    @include desktop {
+      
+      &:hover :first-child {
+        transform: translateY(-10px);
+      }
     }
-
-    &__imageContainer{
-        margin: auto;
-        width: 1000px;
-        border: 1px solid red;
-        overflow:hidden;
-        margin-top: 100px;
-        margin-bottom: 80px;
-
-        &__projectImage{
-            width: 100%;
-            object-fit: contain;
-            height: auto;
-           
-        }
+  
+    &__arrow {
+      height: 15px;
+      margin-bottom: 40px;
+  
+      @include tablet {
+        height: 30px;
+        margin-bottom: 60px;
+      }
     }
+&__text {
+  transform: rotate(90deg);
 }
-.details{
-    margin-bottom: 25px;
-    // border: 1px solid red;
-}
+  }

@@ -11,6 +11,7 @@ const ProjectsList = (props) => {
     return (
       <Project
         key={project.id}
+        id={project.id}
         btn1={project.button1}
         btn2={project.button2}
         btn3={project.button3}
@@ -47,8 +48,3 @@ const ProjectsList = (props) => {
 };
 
 export default ProjectsList;
-
-
-
-
-

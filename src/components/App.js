@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import Comingsoon from "./Comingsoon";
 import data from "../data/data.json";
-import {  Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import Header from "./Header";
 import Home from "./Home";
@@ -19,20 +19,20 @@ function App() {
     setProjects(data);
   }, []);
 
-  const renderProjectDetail = () => {
 
-    return (<ProjectDetail projects={projects} ></ProjectDetail>);
+  const renderProjectDetail = (props) => {
+    const clickedId = props.match.params.id;
 
+    const foundedProject = projects.find((project) => {
+      return project.id === parseInt(clickedId);
+    });
+    // console.log(foundedProject);
 
-    // const routeProjectId = props.match.params.id;
-   
-    // const project = projects.find((project) => project.id === routeProjectId);
-
-    // if (project) {
-    //   return (<ProjectDetail></ProjectDetail>);
-    // } else {
-    //   return "proyecto no encontrado";
-    // }
+    if (foundedProject) {
+      return <ProjectDetail project={foundedProject} />;
+    } else {
+      return "project not found";
+    }
   };
 
   return (
@@ -42,10 +42,11 @@ function App() {
       <main className="main">
         <Home></Home>
         <Switch>
+          <Route exact path="/projects">
+            <ProjectsList projects={projects}></ProjectsList>
+          </Route>
           <Route exact path="/project/:id" render={renderProjectDetail}></Route>
         </Switch>
-        <ProjectsList projects={projects}></ProjectsList>
-
         <About></About>
         <Contact></Contact>
       </main>
