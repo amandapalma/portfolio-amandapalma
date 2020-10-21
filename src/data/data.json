@@ -195,7 +195,7 @@
     "type": "drawing",
     "name": "bowie",
     "tech":{
-        "a": "pencil"
+        "a": "Pencil"
         }
     },
 
@@ -241,7 +241,7 @@
     "type": "drawing",
     "name": "pale blue eyes",
     "tech":{
-        "a": "pencil",
+        "a": "Pencil",
         "b": "PH"
         }
     },

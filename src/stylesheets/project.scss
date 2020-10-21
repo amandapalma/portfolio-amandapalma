@@ -54,7 +54,7 @@
     padding: 5px;
     background-color: $color-light;
     transition: all 0.3s ease-out;
-    border: 1px solid pink;
+    // border: 1px solid pink;
 
     &:hover {
       background-color: $color-dark;
@@ -66,12 +66,18 @@
     align-self: flex-start;
   }
 
-  .techIcons {
+  .techIconBox {
     color: $color-light;
     font-size: 10px;
     width: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+        // border: 1px solid pink;
+
+    & >.fab {
+      padding-right: 5px;
+      // border: 1px solid red;
+    }
    
 
     @include tablet {
@@ -91,3 +97,4 @@
 //   margin: 4px;
 //   // border: 1px solid pink;
 // }
+
