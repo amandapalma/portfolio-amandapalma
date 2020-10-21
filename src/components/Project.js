@@ -6,18 +6,18 @@ import "../stylesheets/project.scss";
 const Project = (props) => {
 
   //GET ICONS
-  const getIcon1 = (props) => {
-    if (props.btn1 === "code") return <i class="fas fa-code"></i>;
-    else if (props.btn1 === "eye") return <i class="fas fa-eye"></i>;
+  const getBtn1 = (props) => {
+    if (props.btn1 === "code") return <button className="projectButton btn1"><i class="fas fa-code"></i></button>;
+    else if (props.btn1 === "eye") return < button className="projectButton btn1"><i class="fas fa-eye"></i></button>;
   };
 
-  const getIcon2 = (props) => {
-    if (props.btn2 === "web") return <i class="fas fa-globe"></i>;
+  const getBtn2 = (props) => {
+    if (props.btn2 === "web") return <button className="projectButton btn2"><i class="fas fa-globe"></i></button>;
     else return "";
   };
 
-  const getIcon3 = (props) => {
-    if (props.btn3 === "surprise") return <i class="fas fa-surprise"></i>;
+  const getBtn3 = (props) => {
+    if (props.btn3 === "surprise") return <button className="projectButton btn3"><i class="fas fa-surprise"></i></button>;
     else return "";
   };
 
@@ -149,10 +149,10 @@ const Project = (props) => {
       <div className="project__cover">
         <div className="project__buttons">
           {/* <Link to={`/project/ ${props.id}`}> */}
-          <button className="projectButton btn1">{getIcon1(props)}</button>
+         {getBtn1(props)}
           {/* </Link> */}
-          <button className="projectButton btn2">{getIcon2(props)}</button>
-          <button className="projectButton btn3">{getIcon3(props)}</button>
+          {getBtn2(props)}
+          {getBtn3(props)}
         </div>
         <div className="project__description">
           <h4 className="proyectType">{props.type}</h4>
