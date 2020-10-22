@@ -1,8 +1,7 @@
 import React from "react";
 import "../stylesheets/projectdetail.scss";
 import uparrow from "../images/up-arrow.svg";
-
-// import lemur1 from "../images/lemur-1.jpg";
+import { Link } from "react-router-dom";
 
 const ProjectDetail = (props) => {
   // console.log(props);
@@ -22,14 +21,14 @@ const ProjectDetail = (props) => {
       </div>
    
         <div className="arrowBox">
-          <a href="#projects" className="backArrow">
+          <Link to="/projects" className="backArrow">
             <img
               className="backArrow__arrow "
               alt="back arrow"
               src={uparrow}
             ></img>
             <p className="backArrow__text">back to projects</p>
-          </a>
+          </Link>
         </div>
   
       <div className="designproject__imageContainer">

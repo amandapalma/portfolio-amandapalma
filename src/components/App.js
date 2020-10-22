@@ -19,7 +19,6 @@ function App() {
     setProjects(data);
   }, []);
 
-
   const renderProjectDetail = (props) => {
     const clickedId = props.match.params.id;
 
@@ -38,20 +37,24 @@ function App() {
   return (
     <div className="App" id="home">
       {/* <Comingsoon></Comingsoon> */}
+
       <Header></Header>
-      <main className="main">
-        <Home></Home>
-        <Switch>
-          <Route exact path="/projects">
-            <ProjectsList projects={projects}></ProjectsList>
-          </Route>
-          <Route exact path="/project/:id" render={renderProjectDetail}></Route>
-        </Switch>
-        <About></About>
-        <Contact></Contact>
-      </main>
-      <Footer></Footer>
-      {/* <DesignProject></DesignProject> */}
+      <Switch>
+      <Route
+              exact
+              path="/project/:id"
+              render={renderProjectDetail}
+            ></Route>
+        <Route path="/">
+          <main className="main">
+            <Home></Home>
+            <ProjectsList projects={projects}>página principal</ProjectsList>
+            <About></About>
+            <Contact></Contact>
+          </main>
+          <Footer></Footer>
+        </Route>
+      </Switch>
     </div>
   );
 }

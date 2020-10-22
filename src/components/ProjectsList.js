@@ -18,6 +18,9 @@ const ProjectsList = (props) => {
         image={project.image}
         type={project.type}
         name={project.name}
+        github={project.github}
+        web={project.web}
+        extra={project.extra}
         tech1={project.tech.a}
         tech2={project.tech.b}
         tech3={project.tech.c}

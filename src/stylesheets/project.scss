@@ -5,15 +5,11 @@
 .project {
   position: relative;
   overflow: hidden;
-  // padding: 10px;
-  // background-color: yellow;
 
   &__image {
     width: 100%;
     object-fit: contain;
     transition: all 0.5s;
-    // background-color: violet;
-    // border: 1 px solid red;
   }
 
   &__cover {
@@ -50,11 +46,10 @@
   }
   .projectButton {
     margin-bottom: 10px;
-    border: none;
     padding: 5px;
     background-color: $color-light;
+    text-align: center;
     transition: all 0.3s ease-out;
-    // border: 1px solid pink;
 
     &:hover {
       background-color: $color-dark;
@@ -72,13 +67,12 @@
     width: 80px;
     display: flex;
     justify-content: flex-start;
-        // border: 1px solid pink;
+    // border: 1px solid pink;
 
-    & >.fab {
+    & > .fab {
       padding-right: 5px;
       // border: 1px solid red;
     }
-   
 
     @include tablet {
       font-size: 10px;
@@ -97,4 +91,3 @@
 //   margin: 4px;
 //   // border: 1px solid pink;
 // }
-
