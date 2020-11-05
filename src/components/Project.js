@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Fade from 'react-reveal/Fade';
 
 import "../stylesheets/project.scss";
 
@@ -180,7 +181,13 @@ const Project = (props) => {
   };
 
   //PAINT
+
+
+
+
+
   return (
+    <Fade bottom>
     <li className="project">
       
       <div className="project__cover">
@@ -202,6 +209,7 @@ const Project = (props) => {
         </div>
       </div>
     </li> 
+    </Fade>
   );
 };
 

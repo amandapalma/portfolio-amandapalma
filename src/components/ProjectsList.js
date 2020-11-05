@@ -1,6 +1,7 @@
 import React from "react";
 import "../stylesheets/projectslist.scss";
 import Project from "./Project.js";
+import Fade from 'react-reveal/Fade';
 import uparrow from "../images/up-arrow.svg";
 import palmtree from "../images/palmtreeicon.png";
 
@@ -9,6 +10,7 @@ const ProjectsList = (props) => {
   const projectList = props.projects.map((project) => {
     // console.log(project.tech.a);
     return (
+      
       <Project
         key={project.id}
         id={project.id}
@@ -26,13 +28,15 @@ const ProjectsList = (props) => {
         tech3={project.tech.c}
         tech4={project.tech.d}
       ></Project>
+     
     );
   });
 
   return (
     <section className="section projects">
       <div className="titleBox">
-        <h2 id="projects">projects</h2>
+      <Fade left cascade>
+        <h2 id="projects">projects</h2> </Fade>
         <img
           className="palmtree sectionPalmtree"
           alt="palmtree"

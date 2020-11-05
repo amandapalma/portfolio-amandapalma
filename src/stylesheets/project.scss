@@ -5,10 +5,28 @@
 .project {
   position: relative;
   overflow: hidden;
-  // border: 2px dotted blue;
+
   &:hover &__image{
-    filter:blur(10px);
-    opacity: 0;
+  animation-name: imageAnimation;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-direction: normal, reverse;
+
+  @keyframes imageAnimation {
+    0% {
+      opacity: 1;
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    50%{
+      clip-path: polygon(0 0, 100% 0%, 100% 40%, 0 70%);
+    }
+    100% {
+      opacity: 0.5;
+      clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+    }
+  }
+  
   }
 
   &:hover &__cover__buttons{
@@ -17,7 +35,7 @@
   }
 
   &:hover &__cover__description{
-    left:0px;
+    bottom:0px;
     transition: all 0.5s ease-out;
   }
 
@@ -53,7 +71,7 @@
       position: absolute;
       bottom: 0px;
       margin:50px;
-      left:-300px;
+     bottom:-300px;
     }
   }
   &__image {

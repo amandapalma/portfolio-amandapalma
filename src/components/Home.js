@@ -7,9 +7,9 @@ const Home = () => {
     <section className="home">
       <div className="home__homeBackground"></div>
       <h1 className="home__mainTitle ">
-        <span className="mainText1">ho</span>
+        <span className="mainText1">he</span>
         <span className="mainText2">
-          la<img className="palmtree" alt="palmtree" src={palmtree}></img>
+          llo<img className="palmtree" alt="palmtree" src={palmtree}></img>
         </span>
       </h1>
     </section>

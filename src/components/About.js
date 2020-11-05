@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 import "../stylesheets/about.scss";
 import uparrow from "../images/up-arrow.svg";
 import profilepic from "../images/illustration.png";
@@ -8,7 +9,7 @@ import palmtree from "../images/palmtreeicon.png";
 const About = () => {
     return ( <section className="section about">
     <div className="titleBox">
-      <h2 id="about">about</h2>
+    <Fade left cascade> <h2 id="about">about</h2></Fade>
       <img
         className="palmtree sectionPalmtree"
         alt="palmtree"

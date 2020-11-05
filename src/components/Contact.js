@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 import "../stylesheets/contact.scss";
 import palmtreeIsland from "../images/palmtree-island.png";
 import uparrow from "../images/up-arrow.svg";
@@ -7,8 +8,8 @@ import palmtree from "../images/palmtreeicon.png";
 const Contact = () => {
   return (
     <section className="section contact">
-      <div className="titleBox">
-        <h2 id="contact">contact</h2>
+   <div className="titleBox">
+   <Fade left cascade><h2 id="contact">contact</h2></Fade>
         <img
           className="palmtree sectionPalmtree"
           alt="palmtree"

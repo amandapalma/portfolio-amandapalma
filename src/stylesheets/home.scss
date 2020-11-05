@@ -22,26 +22,18 @@
     left: 0;
     z-index: -1;
 
-
+//background animation
     animation: triangle ease-in-out;
     animation-duration: 2s;
-    // animation-delay: 1s;
     @keyframes triangle {
       0% {
-        // transform: translateX(1000px);
-        // clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
         clip-path: polygon(0 0, 0 0, 100% 100%, 0% 100%);
-       
       }
      
       100% {
-        // transform: translateX(0);
-        // clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-     
       }
     }
-
 
     @include tablet {
       height: 96%;
