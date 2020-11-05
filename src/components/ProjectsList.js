@@ -9,7 +9,7 @@ const ProjectsList = (props) => {
   const projectList = props.projects.map((project) => {
     // console.log(project.tech.a);
     return (
-      <Project 
+      <Project
         key={project.id}
         id={project.id}
         btn1={project.button1}

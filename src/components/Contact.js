@@ -15,7 +15,7 @@ const Contact = () => {
           src={palmtree}
         ></img>
       </div>
-      <form className="postcard">
+      <form className="postcard" action="https://formspree.io/f/mwkwbyvo" method="post">
         <div className="leftColumn">
           <label className="label textLabel" htmlFor="GET-text">
             Dear Amanda: <span className="as">*</span>
@@ -24,6 +24,7 @@ const Contact = () => {
             className="formInput textarea"
             name="textarea"
             rows="10"
+            required
           ></textarea>
           <button type="submit" className="submitMobile">
             send it! &nbsp;&nbsp;<i className="fas fa-paper-plane"></i>
@@ -40,22 +41,25 @@ const Contact = () => {
             </div>
           </div>
           <label className="label nameLabel" htmlFor="GET-name">
-            Name <span className="label__asterisk">*</span>
+            Name <span className="as">*</span>
           </label>
           <input
             className="formInput nameInput"
             id="GET-name"
             type="text"
             name="name"
+            required
           ></input>
           <label className="label emailLabel" htmlFor="GET-email">
-            Email <span className="label__asterisk">*</span>
+            Email <span className="as">*</span>
           </label>
           <input
             className="formInput emailInput"
             id="GET-email"
             type="email"
             name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
           ></input>
           <button type="submit" className="submitTablet">
             send it! &nbsp;&nbsp;<i className="fas fa-paper-plane"></i>

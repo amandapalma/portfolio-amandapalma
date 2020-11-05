@@ -20,7 +20,7 @@
     "id": 1,
     "button1": "code",
     "button2": "web",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://github.com/amandapalma/portfolio-amandapalma/master/src/images/rick_morty.png",
     "type": "Character Finder Website",
     "name": "Rick & Morty",
     "github": "https://github.com/amandapalma/Rick-and-Morty-Characters-Browser",
@@ -38,7 +38,7 @@
     "button1": "code",
     "button2": "web",
 
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/kardMA_hand.png",
     "type": "Customized Profile Cards Generator Web App",
     "name": "Kard-MA",
     "github": "https://github.com/amandapalma/Kard.MA-Cards",
@@ -56,7 +56,7 @@
     "button1": "code",
     "button2": "web",
 
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/anonimous.png",
     "type": "Responsive Corporate Website",
     "name": "Anonimous",
     "github": "https://github.com/amandapalma/Anonimous-Proxy",
@@ -73,7 +73,7 @@
     "button1": "code",
     "button2": "web",
     "button3": "surprise",
-    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/a_team.png?token=APUQE3JM2M7Z7QO4FGWA63C7ULPFS",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/a_team.png",
     "type": "Responsive Corporate Website",
     "name": "A-Team Project",
     "github": "https://github.com/amandapalma/A-Team",
@@ -90,7 +90,7 @@
     "id": 5,
     "button1": "code",
     "button2": "web",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/tarsier.png",
     "type": "Series Finder Website",
     "name": "Tarsier",
     "github": "https://github.com/amandapalma/Tarsier-Series-Searcher",
@@ -108,7 +108,7 @@
     "button1": "code",
     "button2": "web",
     "button3": "surprise",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/sailor_moon.png",
     "type": "Website Code Refactoring",
     "name": "Sailor Moon Awesome Profile Cards",
     "github": "https://github.com/amandapalma/Sailor-Moon-Cards-Refactoring",
@@ -125,7 +125,7 @@
   {
     "id": 7,
     "button1": "eye",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/artefacto.png",
     "type": "Editorial",
     "name": "Artefacto Magazine",
     "web": "https://www.amandapalma.es/",
@@ -139,7 +139,7 @@
   {
     "id": 8,
     "button1": "eye",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/lemur.png",
     "type": "Visual Identity",
     "name": "Lemur Agency",
     "tech": {
@@ -150,7 +150,7 @@
   {
     "id": 9,
     "button1": "eye",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/thco2.png",
     "type": "Visual Identity",
     "name": "Thinking Company",
     "tech": {
@@ -161,7 +161,7 @@
   {
     "id": 10,
     "button1": "eye",
-    "image": "https://github.com/amandapalma/portfolio-amandapalma/blob/master/src/images/sailor_cat.png?raw=true",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/drbar.png",
     "type": "Advertising",
     "name": "Dr Bar",
     "tech": {
@@ -197,7 +197,7 @@
   {
     "id": 13,
     "button1": "eye",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/ministerio.png",
     "type": "visual identity",
     "name": "ministerio de las ideas",
     "tech": {
@@ -208,7 +208,7 @@
   {
     "id": 14,
     "button1": "eye",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/bowie.png",
     "type": "drawing",
     "name": "bowie",
     "tech": {
@@ -231,7 +231,7 @@
   {
     "id": 16,
     "button1": "eye",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/sada.png",
     "type": "advertising",
     "name": "sada tings",
     "tech": {
@@ -254,7 +254,7 @@
   {
     "id": 18,
     "button1": "eye",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/pale.png",
     "type": "drawing",
     "name": "pale blue eyes",
     "tech": {
@@ -278,7 +278,7 @@
   {
     "id": 20,
     "button1": "eye",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/ohsugar.png",
     "type": "visual identity & naming",
     "name": "oh! sugar",
     "tech": {
