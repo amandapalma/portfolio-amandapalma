@@ -5,60 +5,78 @@
 .project {
   position: relative;
   overflow: hidden;
+  // border: 2px dotted blue;
+  &:hover &__image{
+    filter:blur(10px);
+    opacity: 0;
+  }
 
-  &__image {
-    width: 100%;
-    object-fit: contain;
-    transition: all 0.5s;
+  &:hover &__cover__buttons{
+    right:0px;
+    transition: all 0.4s ease-out;
+  }
+
+  &:hover &__cover__description{
+    left:0px;
+    transition: all 0.5s ease-out;
   }
 
   &__cover {
-    padding: 50px;
     display: flex;
     flex-direction: column;
-
     height: 100%;
     width: 100%;
-
-    position: absolute;
-    bottom: 0;
-
-    transition: all 0.3s ease-out;
-
     background-color: $color-primary;
+   
+   
 
-    &:hover {
-      background-color: $color-secondary;
-      opacity: 1;
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+      width: 50px;
+      margin:50px;
+      z-index: 10;
+      position: absolute;
+      right: -150px;
+
+     
+  
+      @include tablet {
+        width: 70px;
+      }
+    }
+  
+    &__description {
+      align-self: flex-start;
+      z-index: 1;
+      position: absolute;
+      bottom: 0px;
+      margin:50px;
+      left:-300px;
     }
   }
+  &__image {
+    object-fit: fill;
+    z-index:2;
+    transition: all 0.5s ease-out;
+    
 
-  &__buttons {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    margin-bottom: auto;
-    width: 50px;
-
-    @include tablet {
-      width: 70px;
-    }
+   
   }
+
   .projectButton {
     margin-bottom: 10px;
     padding: 5px;
     background-color: $color-light;
     text-align: center;
-    transition: all 0.3s ease-out;
+    transition: all 0.4s ease-out;
+
 
     &:hover {
       background-color: $color-dark;
       color: $color-light;
     }
-  }
-
-  &__description {
-    align-self: flex-start;
   }
 
   .techIconBox {
@@ -67,11 +85,11 @@
     width: 80px;
     display: flex;
     justify-content: flex-start;
-    // border: 1px solid pink;
+
 
     & > .fab {
       padding-right: 5px;
-      // border: 1px solid red;
+   
     }
 
     @include tablet {
@@ -85,9 +103,3 @@
   }
 }
 
-// .divider {
-//   font-size: 10px;
-//   color: $color-dark;
-//   margin: 4px;
-//   // border: 1px solid pink;
-// }

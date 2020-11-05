@@ -5,60 +5,82 @@
 .designproject {
   display: flex;
   flex-direction: column;
-  margin-top: 200px;
+  margin-top: 120px;
 
   &__description {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    column-gap: 50px;
-    width: 50%;
+    column-gap: 10px;
+    width: 70%;
     margin: auto;
+
+    @include tablet{
+      column-gap: 50px;
+      width: 50%;
+    }
   }
 
   &__imageContainer {
     margin: auto;
-    width: 1000px;
-    border: 1px solid red;
     overflow: hidden;
-    margin-top: 100px;
     margin-bottom: 80px;
+    width: 70%;
+
+    @include tablet{
+      width: 70%;
+    }
+
+    @include desktop{
+      width: 50%;
+    }
+
+
+    // background-color: yellow;
 
     &__projectImage {
       width: 100%;
       object-fit: contain;
       height: auto;
+
+      // border: 1px dashed red;
     }
   }
-}
-.details {
-  margin-bottom: 25px;
-  // border: 1px solid red;
 }
 
-.backArrow {
-    transform: rotate(-90deg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // transition: all 0.5s;
-  
-    @include desktop {
-      
-      &:hover :first-child {
-        transform: translateY(-10px);
-      }
-    }
-  
-    &__arrow {
-      height: 15px;
-      margin-bottom: 40px;
-  
-      @include tablet {
-        height: 30px;
-        margin-bottom: 60px;
-      }
-    }
-&__text {
-  transform: rotate(90deg);
-}
+.col {
+  // border: 2px dotted orange;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  justify-content: space-between;
+
+  &__textBox {
+    margin-bottom: 25px;
+    // border: 1px solid pink;Í
   }
+}
+
+.backArrowBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  // border: 1px solid cyan;
+
+  @include desktop {
+    &:hover :first-child {
+      transform: translateX(-20px) rotate(-90deg);
+    }
+  }
+
+  &__arrow {
+    transform: rotate(-90deg);
+    height: 15px;
+    margin-right: 5px;
+
+    @include tablet {
+      height: 30px;
+      margin-right: 10px;
+    }
+    // border: 2px dotted darkmagenta;
+  }
+}

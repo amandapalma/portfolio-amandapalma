@@ -73,7 +73,7 @@
     "button1": "code",
     "button2": "web",
     "button3": "surprise",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://raw.githubusercontent.com/amandapalma/portfolio-amandapalma/master/src/images/a_team.png?token=APUQE3JM2M7Z7QO4FGWA63C7ULPFS",
     "type": "Responsive Corporate Website",
     "name": "A-Team Project",
     "github": "https://github.com/amandapalma/A-Team",
@@ -161,7 +161,7 @@
   {
     "id": 10,
     "button1": "eye",
-    "image": "https://via.placeholder.com/680x450",
+    "image": "https://github.com/amandapalma/portfolio-amandapalma/blob/master/src/images/sailor_cat.png?raw=true",
     "type": "Advertising",
     "name": "Dr Bar",
     "tech": {

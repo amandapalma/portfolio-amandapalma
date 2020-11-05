@@ -26,12 +26,12 @@ const Project = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           > */}
-            <i className="fas fa-eye"></i>
+          <i className="fas fa-eye"></i>
           {/* </a>  */}
         </Link>
       );
   };
-  console.log(props.github);
+  // console.log(props.image);
   const getBtn2 = (props) => {
     if (props.btn2 === "web")
       return (
@@ -182,14 +182,15 @@ const Project = (props) => {
   //PAINT
   return (
     <li className="project">
-      <img className="project__image" alt="project" src={props.image}></img>
+      
       <div className="project__cover">
-        <div className="project__buttons">
+      <img className="project__image" alt="project" src={props.image}></img>
+        <div className="project__cover__buttons">
           {getBtn1(props)}
           {getBtn2(props)}
           {getBtn3(props)}
         </div>
-        <div className="project__description">
+        <div className="project__cover__description">
           <h4 className="proyectType">{props.type}</h4>
           <h3 className="proyectName"> {props.name}</h3>
           <div className="techIconBox">
@@ -200,7 +201,7 @@ const Project = (props) => {
           </div>
         </div>
       </div>
-    </li>
+    </li> 
   );
 };
 
